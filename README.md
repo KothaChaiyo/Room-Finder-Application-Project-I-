@@ -15,7 +15,7 @@ Color palette:
 
 
     
-background-color: #eaf2fa   <span style="background-color:"eaf2fa" height="10" width="10"></span>
+background-color: #eaf2fa 
 
 background-color: white 
 
