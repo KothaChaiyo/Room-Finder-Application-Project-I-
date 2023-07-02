@@ -12,16 +12,13 @@ font-family : system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
 Color palette:
 
 
-- ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) `#f03c15`
-- ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) `#c5f015`
-- ![#1589F0](https://placehold.co/15x15/1589F0/1589F0.png) `#1589F0`
 
 
 
     
 background-color:    - ![#eaf2fa](https://placehold.co/15x15/eaf2fa/eaf2fa.png) `#eaf2fa`
 
-background-color: white 
+background-color:     - ![#fff](https://placehold.co/15x15/fff/fff.png) `#fff`
 
 background-color:   - ![#053367](https://placehold.co/15x15/053367/053367.png) `#053367`
 
@@ -30,11 +27,11 @@ background-color: #7cb1e7   - ![#7cb1e7](https://placehold.co/15x15/7cb1e7/7cb1e
 background-color:     - ![#444](https://placehold.co/15x15/444/444.png) `#444`
 
 
-color: rgb(24, 200, 133)
+color: - ![#18C885](https://placehold.co/15x15/18C885/18C885.png) `#18C885`
 
-color:  rgb(42 255 173)
+color:  - ![#2AFFAD](https://placehold.co/15x15/2AFFAD/2AFFAD.png) `#2AFFAD`
 
-color:  rgb(209 241 255)
+color: - ![#D1F1FF](https://placehold.co/15x15/D1F1FF/D1F1FF.png) `#D1F1FF`
   
 
 
