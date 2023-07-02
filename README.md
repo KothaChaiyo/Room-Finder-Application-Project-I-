@@ -12,23 +12,26 @@ font-family : system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
 Color palette:
 
 <style>
-background-color: #eaf2fa
 
-background-color: white
+  p{
+    
+background-color: #eaf2fa;
 
-background-color: #053367
+background-color: white;
 
-background-color: #7cb1e7
+background-color: #053367;
+
+background-color: #7cb1e7;
 
 background-color: #444;
 
 
-color: rgb(24, 200, 133)
+color: rgb(24, 200, 133);
 
-color:  rgb(42 255 173)
+color:  rgb(42 255 173);
 
-color:  rgb(209 241 255)
-  
+color:  rgb(209 241 255);
+  }
 </style>
 
 
