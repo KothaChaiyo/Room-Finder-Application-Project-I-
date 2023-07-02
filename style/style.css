@@ -1,0 +1,493 @@
+
+/* universal styling */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #eaf2fa;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateZ(-20%);
+    transition: all 1s ease-in;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateZ(0);
+}
+
+/* navBar section starts */
+
+section#navBar{
+    width: 100%;
+    height: 10vh;
+    padding-top: 20px;
+    position: sticky;
+    top: 0px;
+    border-bottom: 2px solid;
+    background-color: rgb(255, 255, 255);
+    z-index: 3;
+
+}
+
+div#nav ul li{
+    list-style-type: none;   
+}
+
+div#nav ul li a{
+    text-decoration: none;
+    padding-right: 10vw;
+    font-size:1.3vw;
+    color: black;
+    transition: color 0.5s;
+    font-weight:bolder;
+}
+
+div#nav ul li a:hover{
+    color:rgb(24, 200, 133);
+}
+
+div#nav ul li a img{
+    width: 5%;
+    margin-right: 40vw;
+    float: left;
+    margin-top: -2vw;
+}
+
+
+div#nav ul li, div#nav ul li a , div#nav ul li a img{
+    display: inline;
+}
+
+
+/* home section starts  */
+#backgroundImage{
+    background-image: url("/Images/homeBackground.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100vh;
+    width: 100%;
+    position:absolute;
+    top:0px;
+    left: 0px;
+    opacity: 0.5;
+    z-index: 1;
+    backdrop-filter: blur(2px);
+}
+
+#backgroundColor{
+    height: 100vh;
+    width: 100%;
+    position:absolute;
+    top:0px;
+    left: 0px;
+    opacity: 0.5;
+    background: #102b7b;
+    mix-blend-mode:multiply;
+    z-index: 1;
+
+}
+
+section#home{
+    position: relative;
+    height: 100vh;
+    z-index: 2;
+    background-clip: text;
+    -webkit-background-clip: text; /* For Safari/Chrome */    
+}
+
+section#home div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+
+}
+
+div#welcomeMessageContainer span{
+    display: block;
+    margin-bottom: 1vw;
+    font-weight: 900;   
+}
+
+span#welcomeTo{
+    font-size: 2.5vw;
+    margin-top: 20vh;
+    color: white;
+}
+
+span#roomFinder{ 
+    font-size: 3.5vw;  
+    color: rgb(42 255 173);
+}
+
+span#titleMessage{
+    font-size: 1.5vw;
+    color: rgb(209 241 255);
+}
+
+
+span#getStartedNow{
+    font-size: 2vw;
+    color: white;
+}
+
+button.joinButton{
+    width: 15%;
+    height: 4vw;
+    margin-top: 5vw;
+    border: none;
+    border-radius: 0.5vw;
+    background-color: rgb(24, 200, 133);
+    color: white;
+    font-weight: bolder;
+    font-size: 1.5vw;
+    transition: background-color 1s;
+}    
+
+button.joinButton:hover{
+    cursor: pointer;
+    background-color: #053367;
+}
+
+button#joinasFinder{
+    margin-right: 20vw;
+}
+
+/* Why Us section starts  */
+
+ div#title{
+    font-size: 3vw;
+    text-align: center;
+    font-weight: bolder;
+}
+
+section#whyUs div#imgContainer img{
+    margin:5vw;
+    width: 22vw;
+}
+
+
+/* FAQ section starts  */
+
+#faqContainer .answer {
+    display: none;
+    font-size: 1.2vw;
+    background-color: #7cb1e7;
+    width: 50vw;
+    border-radius: 10px;
+    height: 20vh;
+    color: white;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+
+#faqContainer .question {
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+div#faqContainer{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    }
+
+div.question{
+    background-color:  rgb(24, 200, 133);
+    height: 8vh;
+    width: 50vw;
+    padding: 10px;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.2vw;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+section#footer{
+    margin-top: 10vw;
+}
+
+section#footer div{
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+
+/* Mobile-View sidebar section starts  */
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    right: 0;
+    background-color: rgb(24, 200, 133);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+  
+div#mobileNavBar{
+    display: none;
+    width: 100%;
+    height: 9vh;
+    background-color: white;
+    border-bottom: 2px solid black;
+}
+
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    font-weight: bolder;
+    display: block;
+    transition: 0.3s;
+    
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+  
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color:  rgb(9, 226, 142);
+    border-radius: 5px;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    position:fixed;
+    right:2vw;
+    top:5px;
+}
+  
+.openbtn:hover {
+    background-color: #444;
+}
+  
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+
+/* responsive deisgn code starts  */
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+  
+@media screen and (max-width:650px){
+
+    section#navBar{
+        display: none;
+    }
+    div#mobileNavBar{
+        display: block;
+        position:fixed;
+        z-index: 4;
+    }
+
+    div#mobileNavBar #main img{
+        width: 5vw;  
+    }
+  }
+ 
+@media screen and (min-width:1500px){
+    section#home div{
+        display: block;
+    }
+}
+
+@media screen and (max-width:1350px){
+
+    span#welcomeTo{
+        font-size: 3vw;
+    }
+
+    span#roomFinder{ 
+        font-size: 4vw;  
+    }
+    
+    span#titleMessage{
+        font-size: 1.5vw;
+    }
+    
+    
+    span#getStartedNow{
+        font-size: 3vw;
+    }
+
+    button.joinButton{
+        margin-top: 10vh;
+        width: 26%;
+        height: 6vw;
+        font-size: 3vw;
+    }
+
+    #faqContainer .question{
+        font-size: 1.4vw;
+    }
+
+    #faqContainer .answer{
+        font-size: 1.4vw;
+    }
+}
+
+@media screen and (max-width:1000px){
+    #faqContainer .question{
+        font-size: 1.6vw;
+    }
+
+    #faqContainer .answer{
+        font-size: 1.6vw;
+    }
+}
+
+@media screen and (max-width:850px){
+
+    span#welcomeTo{
+        font-size: 4vw;
+    }
+
+    span#roomFinder{ 
+        font-size: 5.5vw;  
+    }
+    
+    span#titleMessage{
+        font-size: 3.5vw;
+    }
+    
+    span#getStartedNow{
+        font-size: 4vw;
+        margin-top: 6vh;
+    }
+
+    button.joinButton{
+        margin-top: 10vh;
+        width: 26%;
+        height: 6vw;
+        font-size: 3vw;
+    }
+
+    #faqContainer .question{
+        width:60vw;
+        font-size: 2vw;
+    }
+
+    #faqContainer .answer{
+        width: 60vw;
+        font-size: 2vw;
+        height: 20vh;
+    } 
+}
+
+@media screen  and (max-width:650px){
+    div#nav ul li a img{
+        margin-right: 30vw;
+    }
+
+    span#welcomeTo{
+        font-size: 5.5vw;
+    }
+
+    span#roomFinder{ 
+        font-size: 7.5vw;  
+    }
+    
+    span#titleMessage{
+        font-size: 3.5vw;
+    }
+
+    span#getStartedNow{
+        font-size: 4vw;
+    }
+
+
+    button.joinButton{
+        width: 35%;
+        height:60px;  
+        margin-top: 100px;
+        border-radius: 7px;
+    }
+    
+
+    section#whyUs{
+        margin-top: 70px;
+    }
+
+    section#whyUs div#imgContainer img{
+        display: block;
+        margin:5vw;
+        margin-left: 27%;
+        width: 50vw;
+    }
+
+    #faqContainer .question{
+        font-size: 2.5vw;
+    }
+
+    #faqContainer .answer{
+        font-size: 2.5vw;
+    }
+
+}
+
+
+@media screen and (max-width:450px) {
+    span#welcomeTo{
+        font-size: 4.5vw;
+    }
+    
+    span#roomFinder{ 
+        font-size: 40px;  
+    }
+    
+    span#titleMessage{
+        font-size: 20px;
+        margin-top: 2vh;
+    }
+    
+    span#getStartedNow{
+        font-size: 30px;
+        margin-top: 2vh;   
+    }
+
+    button.joinButton{
+        display: block;
+        border-radius: 10px;
+        height:50px;
+    }
+
+    #faqContainer .question , #faqContainer .answer{
+        width: 80%;
+        font-size: 4vw;
+    }
+
+    #faq #title , #whyUs #title{
+        font-size: 5vw;
+    }
+}
