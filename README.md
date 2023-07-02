@@ -38,16 +38,20 @@ color: - ![#D1F1FF](https://placehold.co/15x15/D1F1FF/D1F1FF.png) `#D1F1FF`
 
 To add animation
 
-1. link "script/index.js" script to html file
+1. link "script/index.js" script file to html
 
               <script src = "script/index.js"> </script>
 
+2. link "style/animation.css" stylesheet file to html
+                <link rel="stylesheet" href="./style/animation.css">
 
-2. add class "hidden" to component you want the animation to be impelemented on
+3. add class "hidden" to component you want the animation to be impelemented on
 
 
         Example:
                  <div class="hidden"> </div>
+
+   
 
 
 
