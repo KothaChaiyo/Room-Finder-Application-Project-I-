@@ -43,9 +43,12 @@ To add animation
               <script src = "script/index.js"> </script>
 
 2. link "style/animation.css" stylesheet file to html
-                <link rel="stylesheet" href="./style/animation.css">
+             
+                <link rel="styleshee" href="./style/animation.css">
 
-3. add class "hidden" to component you want the animation to be impelemented on
+   
+
+4. add class "hidden" to component you want the animation to be impelemented on
 
 
         Example:
