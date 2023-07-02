@@ -19,15 +19,15 @@ Color palette:
 
 
     
-background-color: #eaf2fa   - ![#eaf2fa](https://placehold.co/15x15/eaf2fa/eaf2fa.png) 
+background-color:    - ![#eaf2fa](https://placehold.co/15x15/eaf2fa/eaf2fa.png) `#eaf2fa`
 
 background-color: white 
 
-background-color: #053367
+background-color:   - ![#053367](https://placehold.co/15x15/053367/053367.png) `#053367`
 
-background-color: #7cb1e7
+background-color: #7cb1e7   - ![#7cb1e7](https://placehold.co/15x15/7cb1e7/7cb1e7.png) `#7cb1e7`
 
-background-color: #444
+background-color:     - ![#444](https://placehold.co/15x15/444/444.png) `#444`
 
 
 color: rgb(24, 200, 133)
