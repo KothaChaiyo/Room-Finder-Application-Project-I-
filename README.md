@@ -11,28 +11,28 @@ font-family : system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
 
 Color palette:
 
-<style>
 
-  p{
+
+
     
-background-color: #eaf2fa;
+background-color: #eaf2fa   <span style="background-color:"eaf2fa" height="10" width="10"></span>
 
-background-color: white;
+background-color: white 
 
-background-color: #053367;
+background-color: #053367
 
-background-color: #7cb1e7;
+background-color: #7cb1e7
 
-background-color: #444;
+background-color: #444
 
 
-color: rgb(24, 200, 133);
+color: rgb(24, 200, 133)
 
-color:  rgb(42 255 173);
+color:  rgb(42 255 173)
 
-color:  rgb(209 241 255);
-  }
-</style>
+color:  rgb(209 241 255)
+  
+
 
 
 To add animation
