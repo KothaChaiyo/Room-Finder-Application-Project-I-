@@ -44,7 +44,7 @@ To add animation
 
 2. link "style/animation.css" stylesheet file to html
              
-                <link rel="styleshee" href="./style/animation.css">
+                <link rel="stylesheet" href="./style/animation.css">
 
    
 
