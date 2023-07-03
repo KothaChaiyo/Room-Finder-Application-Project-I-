@@ -2,6 +2,36 @@
 Web based smart Room Finder Application developed as a college Project I.
 
 
+TO CONTRIBUTE:
+
+    1. Clone the repo
+            -> git clone https://github.com/KothaChaiyo/Room-Finder-Application-Project-I-.git
+
+    2. Create a new branch
+
+            -> git branch branchName
+
+    3. Make changes (your contribution)
+
+    4. Checkout to the created branch
+
+            -> git checkout branchName 
+
+        
+
+    4. Add,commit and push 
+
+
+            -> git add fileName
+            -> git commit -m "Commit message"
+
+            -> git push origin branchName 
+
+    5. Create a pull request 
+
+    6. Wait to get reviewed and merged
+
+
 
 Font family:
 
