@@ -62,7 +62,7 @@ div#nav ul li, div#nav ul li a , div#nav ul li a img{
 
 /* home section starts  */
 #backgroundImage{
-    background-image: url("/Images/homeBackground.jpg");
+    background-image: url("../Images/homeBackground.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     height: 100vh;
