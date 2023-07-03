@@ -7,18 +7,16 @@ TO CONTRIBUTE:
     1. Clone the repo
             -> git clone https://github.com/KothaChaiyo/Room-Finder-Application-Project-I-.git
 
-    2. Create a new branch
+    2. Make changes (your contribution)
+
+    3 Create a new branch
 
             -> git branch branchName
-
-    3. Make changes (your contribution)
 
     4. Checkout to the created branch
 
             -> git checkout branchName 
-
         
-
     4. Add,commit and push 
 
 
@@ -30,6 +28,9 @@ TO CONTRIBUTE:
     5. Create a pull request 
 
     6. Wait to get reviewed and merged
+
+    Note : Don't push directly to the main branch
+
 
 
 
