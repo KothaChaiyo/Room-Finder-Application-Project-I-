@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,6 +14,7 @@
     <!-- for animation of components -->
     <link rel="stylesheet" href="./style/animation.css">
     <script src="./script/index.js" defer></script>
+    <!-- <script defer src="script\turkishButton.js"></script> -->
   
 </head>
 <body style="background-image: url('Images\homeBackground.jpg'); background-repeat: no-repeat; background-attachment: fixed; ">
@@ -22,7 +24,7 @@
     <script src="Header.js"></script>
 
     <div class="signUpContainer">
-            <form action="" method="get">
+            <form action="" method="get" id="signUpForm">
                 <h3 class=".formLabel">Sign Up!!</h2>
                 <hr>
                 <label for="fName" class="formLabel">First name:</label><br>
@@ -37,15 +39,14 @@
                 <input type="password" name="rePassword" id="rePassword" class="inputTextFelid"><br>
                 <label for="contact" class="formLabel">Contact No:</label><br>
                 <input type="number" name="contact" id="contact" class="inputTextFelid"><br>
-                <div class="formRadioButton">
                     <h4>Join As:</h4>
-                    <input type="radio" id="joinChoice1" name="joinAs" value="LandLord" />
+                    <!-- <input type="radio" id="joinChoice1" name="joinAs" value="LandLord" />
                     <label for="joinChoice1">LandLord</label>
 
                     <input type="radio" id="contactChoice2" name="joinAs" value="Tenant" />
-                    <label for="joinChoice2">Tenant</label>
-
-                </div>
+                    <label for="joinChoice2">Tenant</label> -->
+                    <button type="submit" form="signUpForm" name="joinAs" value="LandLord" class="inputButton" id="landLord">LandLord</button>
+                    <button type="submit" form="signUpForm" name="joinAs" value="Tenant" class="inputButton" id="tenant">Tenant</button>
 
             </form>
     </div>

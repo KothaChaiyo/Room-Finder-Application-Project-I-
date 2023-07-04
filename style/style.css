@@ -37,7 +37,7 @@ div#nav ul li{
 
 div#nav ul li a{
     text-decoration: none;
-    padding-right: 7vw;
+    padding-right: 10vw;
     font-size:1.3vw;
     color: black;
     transition: color 0.5s;
@@ -492,13 +492,13 @@ div#mobileNavBar{
     margin: auto;
     margin-top: 3vh;
     background-color: #053367;
-    max-width: 30%;
+    width: 30%;
     padding: 10px;
     border-radius: 10px;
     font-size: 3vh;
     text-align: center;
     color: #D1F1FF;
-    
+    height: 80%;
 
 }
 
@@ -525,5 +525,25 @@ form{
     padding: 2px;
     color: #D1F1FF;
 
+}
+
+.inputButton{
+    font-size: 2vh;
+    background-color: #2AFFAD;
+    border-color: #2AFFAD;
+    display: inline-block;
+    border-radius: 5px;
+    height:50px;
+    width: 30%;
+    
+}
+.inputButton#landLord{
+    
+    float:left;
+   
+}
+.inputButton#tenant{
+
+    float:right;
 }
 
