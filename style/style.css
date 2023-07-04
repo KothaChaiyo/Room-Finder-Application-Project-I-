@@ -9,6 +9,7 @@
 
 body{
     background-color: #eaf2fa;
+    background-attachment: scroll;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -36,7 +37,7 @@ div#nav ul li{
 
 div#nav ul li a{
     text-decoration: none;
-    padding-right: 10vw;
+    padding-right: 7vw;
     font-size:1.3vw;
     color: black;
     transition: color 0.5s;
@@ -73,6 +74,7 @@ div#nav ul li, div#nav ul li a , div#nav ul li a img{
     opacity: 0.5;
     z-index: 1;
     backdrop-filter: blur(2px);
+    
 }
 
 #backgroundColor{
@@ -481,4 +483,47 @@ div#mobileNavBar{
     #faq #title , #whyUs #title{
         font-size: 5vw;
     }
+
 }
+
+    /* Sign Up section Begins here */
+
+.signUpContainer{
+    margin: auto;
+    margin-top: 3vh;
+    background-color: #053367;
+    max-width: 30%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 3vh;
+    text-align: center;
+    color: #D1F1FF;
+    
+
+}
+
+.inputTextFelid{
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: .5px;
+    margin: 10px 0;
+
+
+}
+
+form{
+    position: relative;
+    z-index: 1;
+} 
+
+.formLabel{
+
+    font-size: 3vh;
+    padding: 2px;
+    color: #D1F1FF;
+
+}
+
