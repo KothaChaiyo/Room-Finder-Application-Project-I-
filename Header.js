@@ -8,7 +8,6 @@ document.write(`
             <li><a href="#"><img src="./Images/NOSK_Logo_with_Tagline.png" alt=""></a></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="#whyUs">Why Us?</a></li>
-            <li><a href="signUp.html">SignUp</a></li>
             <li><a href="#faq">FAQs</a></li>
         </ul>
     </div>
