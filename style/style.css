@@ -499,6 +499,7 @@ div#mobileNavBar{
     text-align: center;
     color: #D1F1FF;
     height: 80%;
+    overflow: hidden;
 
 }
 
@@ -537,13 +538,15 @@ form{
     width: 30%;
     
 }
-.inputButton#landLord{
-    
+.inputButton#landLord{   
     float:left;
-   
+    position: relative;
 }
 .inputButton#tenant{
-
+    position: relative;
     float:right;
+    
 }
+
+
 
