@@ -15,7 +15,7 @@ const rePassword = document.getElementById('rePassword')
 const fName = document.getElementById("fName")
 const lName = document.getElementById("lName")
 const contact = document.getElementById("contact")
-const email = document.getElementById("email")
+const email = document.getElementById("uEmail")
 
 
 
@@ -24,11 +24,11 @@ const email = document.getElementById("email")
 const OFFSET = 25;
 
 landLord.addEventListener('focus', () => {
-    alert("Form not filled Correctly")
+    getValidationInfo()
 })
 
 tenant.addEventListener('focus', () => {
-    alert("Form not filled Correctly")
+    getValidationInfo()
 })
 
 
@@ -36,8 +36,9 @@ tenant.addEventListener('focus', () => {
 
 document.addEventListener('mousemove',(e) => {
    
-    
-    turkishButton(e);
+    if(!isValid()){
+        turkishButton(e);
+    }
 
 })
 
@@ -81,13 +82,17 @@ function turkishButton(e){
         if(Math.abs(horizontalDistanceFromLandLord) <= horizontalOffsetLandlord && Math.abs(verticalDistanceFromLandLord) <= verticalOffsetLandlord){
             console.log('landlord')
             // landLord.style.float="right"
+            
             landLord.style.visibility="hidden"
+            
+           
                
         }
         else{
             console.log('tenant')
             // tenant.style.float="left"
             tenant.style.visibility="hidden"
+            
         }
     }else {
         // landLord.style.float="left"
@@ -98,18 +103,62 @@ function turkishButton(e){
 
 }
 
+function validateEmail(email) {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
 
 function validationInfo(){
     var flag = 0;
     if (password.value != rePassword.value){
-            return 1;
+        return 1;
     }
-    else if (password == '' ){
+    else if (password.value == '' ){
         return 2;
     }
     else if (fName.value.length<3){
         return 3;
     }else if (lName.value.length<3){
         return 4;
+    }else if(!validateEmail(email.value)){
+      
+        return 5;
     }
+    else{
+        console.log(email.value);
+        return 200;
+    } 
+}
+
+
+function isValid(){
+    if ((validationInfo()) == 200)
+    return true;
+    else return false;
+
+}
+
+function getValidationInfo(){
+    switch (validationInfo()){
+        case 1:
+            alert('1 password mismatch')
+            break
+        case 2:
+            alert('2 Empty Password')
+            break
+        case 3:
+            alert('3 Minium 3 characters required')
+            break
+        case 4:
+            alert('4 Minium 3 characters required')
+        case 5:
+            alert('5 Please Enter a valid Email')
+
+    }
+}
+
+
+function validateEmail(email) {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
 }
