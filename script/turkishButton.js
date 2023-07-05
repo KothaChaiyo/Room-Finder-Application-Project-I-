@@ -1,5 +1,4 @@
-// work remaining 
-
+//getting button elements
 
 const landLord = document.getElementById('landLord');
 const tenant = document.getElementById('tenant');
@@ -21,6 +20,7 @@ const email = document.getElementById("uEmail")
 
 
 
+// this determines the activation point of turkish button 
 const OFFSET = 25;
 
 landLord.addEventListener('focus', () => {
@@ -33,24 +33,22 @@ tenant.addEventListener('focus', () => {
 
 
 
-
+//Mousr Movement Listener 
 document.addEventListener('mousemove',(e) => {
    
-    if(!isValid()){
+    if(!isValid()){                 //isValid() returns true if form is valid
         turkishButton(e);
     }
 
 })
 
-function distanceFromCenter(boxPosition, mousePosition, boxSize){
+function distanceFromCenter(boxPosition, mousePosition, boxSize){ 
     return boxPosition - mousePosition + boxSize / 2
 }
 
 
-function resetPosition(){
-    console.log('reset')
-}
 
+// This Implements The Button
 
 function turkishButton(e){
     const x = e.pageX
@@ -81,7 +79,8 @@ function turkishButton(e){
     if((Math.abs(horizontalDistanceFromLandLord) <= horizontalOffsetLandlord && Math.abs(verticalDistanceFromLandLord) <= verticalOffsetLandlord) ||  (Math.abs(horizontalDistanceFromTenant) <= horizontalOffsetTenant && Math.abs(verticalDistanceFromTenant) <= verticalOffsetTenant ) ){
         if(Math.abs(horizontalDistanceFromLandLord) <= horizontalOffsetLandlord && Math.abs(verticalDistanceFromLandLord) <= verticalOffsetLandlord){
             console.log('landlord')
-            // landLord.style.float="right"
+
+            //Actions to be taken once the pointer is near the button LandLord
             
             landLord.style.visibility="hidden"
             
@@ -90,26 +89,31 @@ function turkishButton(e){
         }
         else{
             console.log('tenant')
-            // tenant.style.float="left"
+            //Actions to be taken once the pointer is near the button tenant
+
             tenant.style.visibility="hidden"
             
         }
     }else {
-        // landLord.style.float="left"
-        // tenant.style.float="right"
+        
+        //Actions to be taken once the pointer is away the buttons
+
         landLord.style.visibility="visible"
         tenant.style.visibility="visible"
     }
 
 }
 
+
+//Function to validate email, returns true if valid email is found
 function validateEmail(email) {
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
 }
 
+
+//Form Validation test Case is defined here:
 function validationInfo(){
-    var flag = 0;
     if (password.value != rePassword.value){
         return 1;
     }
@@ -130,7 +134,7 @@ function validationInfo(){
     } 
 }
 
-
+//This returns true if all the validation Requirement is met
 function isValid(){
     if ((validationInfo()) == 200)
     return true;
@@ -138,6 +142,8 @@ function isValid(){
 
 }
 
+
+//This function specifies why the Form is not valid 
 function getValidationInfo(){
     switch (validationInfo()){
         case 1:
@@ -158,7 +164,3 @@ function getValidationInfo(){
 }
 
 
-function validateEmail(email) {
-    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(String(email).toLowerCase());
-}
