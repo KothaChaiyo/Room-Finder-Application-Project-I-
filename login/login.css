@@ -1,0 +1,64 @@
+div.container-form{
+    background-color: rgb(5,51,101);
+    color: white;
+    position: absolute;
+    top: 30vh;
+    left: 35%;
+    width: 30%;
+    height: 50vh;
+    font-size: 1.5rem;
+    font-weight: bolder;
+  
+}
+
+div.container-form hr{
+    width: 75%;
+}
+div form{
+    left: 10%;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+div label{
+    position: relative;
+    left: 30%;
+}
+p#forget-pass{
+    position: relative;
+    left: 50%;
+}
+p#sign-up{
+    position: relative;
+    left: 10%;
+}
+p#sign-up a{
+    background-color: rgb(85, 85, 232);
+}
+div.container-form h2,h3{
+    text-align: center;
+    color: rgb(154, 230, 121);
+
+}
+div form input{
+    width:70%;
+    height: 4vh;
+    font-size: large;
+}
+
+div form button{
+    color:white;
+    width: 25%;
+    height: 4vh;
+    position: relative;
+    left: 15%;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    background-color:rgb(24, 200, 133);;
+}
+div form button:hover{
+    color: white;
+    background: #102b7b;;
+}
+

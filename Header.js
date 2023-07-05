@@ -5,7 +5,7 @@ document.write(`
     <section  id="navBar">
     <div id="nav">
         <ul>
-            <li><a href="#"><img src="./Images/NOSK_Logo_with_Tagline.png" alt=""></a></li>
+            <li><a href="#"><img src="/Room-Finder-Application-Project-I-/Images/NOSK_Logo_with_Tagline.png" alt=""></a></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="#whyUs">Why Us?</a></li>
             <li><a href="#faq">FAQs</a></li>
