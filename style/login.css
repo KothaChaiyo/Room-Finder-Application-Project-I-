@@ -2,10 +2,10 @@ div.container-form{
     background-color: rgba(5,51,101,0.8);
     color: white;
     position: absolute;
-    top: 30vh;
-    left: 35%;
-    width: 30%;
-    height: 50vh;
+    top: 20vh;
+    left: 30%;
+    width: 40%;
+    height: 75vh;
     font-size: 1.5rem;
     font-weight: bolder;
     z-index: 1;
@@ -24,11 +24,11 @@ a{
 }
 div label{
     position: relative;
-    left: 30%;
+    left:2%;
 }
 p#forget-pass{
     position: relative;
-    left: 50%;
+    left: 60%;
 }
 p#sign-up{
     position: relative;
@@ -44,26 +44,28 @@ div.container-form h2,h3{
 }
 div form input{
     border-radius: 8px;
-    width:70%;
-    height: 4vh;
+    width:80%;
+    height: 8vh;
     font-size: large;
 }
 
 div form button{
     color:white;
+    border: none;
     border-radius: 8px;
-    width: 25%;
-    height: 4vh;
+    width: 30%;
+    height: 7vh;
     position: relative;
-    left: 15%;
+    left: 25%;
     font-size: 1.5rem;
     font-weight: bolder;
-    background-color:rgb(24, 200, 133);;
+    background-color:rgb(24, 200, 133);
 }
 div form button:hover{
     color: white;
     background: #102b7b;
     background-image: url();
+    cursor: pointer;
 }
 
 
