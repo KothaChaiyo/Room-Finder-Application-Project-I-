@@ -2,15 +2,22 @@ div.container-form{
     background-color: rgba(5,51,101,0.8);
     color: white;
     position: absolute;
-    top: 20vh;
-    left: 30%;
+
     width: 40%;
-    height: 75vh;
+
+    margin-left: 30vw;
+    margin-top: 3%;
+    overflow: hidden;
+
+ 
+    height:fit-content;
     font-size: 1.5rem;
     font-weight: bolder;
     z-index: 1;
-    border-radius: 8px;
+    border-radius: 20px;
 }
+
+
 
 div.container-form hr{
     width: 75%;
@@ -24,18 +31,29 @@ a{
 }
 div label{
     position: relative;
-    left:2%;
+    left:1%;
 }
 p#forget-pass{
     position: relative;
-    left: 60%;
+    left: 50%;
 }
+
+p#forget-pass a:hover{
+    color: rgb(24, 200, 133);
+}
+
 p#sign-up{
     position: relative;
     left: 10%;
+    margin-bottom: 7%;
 }
 p#sign-up a{
-    background-color: rgb(85, 85, 232);
+    background-color:rgb(24, 200, 133);
+    border-radius: 1px;
+}
+
+p#sign-up a:hover{
+   background-color:#102b7b
 }
 div.container-form h2,h3{
     text-align: center;
@@ -69,3 +87,160 @@ div form button:hover{
 }
 
 
+
+
+@media screen and (max-width:1300px)  {
+    div.container-form{
+ 
+        width: 50%;
+       
+    }
+}
+
+
+@media screen and (max-width:1000px)  {
+    div.container-form{
+
+        width: 60%;
+       
+    }
+}
+
+@media screen and (max-width:900px)  {
+    div.container-form{
+
+        width: 70%;
+        margin-left: 20vw;
+    }
+}
+
+@media screen and (max-width:800px)  {
+    div.container-form{
+  
+        width: 80%;
+
+        margin-left: 10vw;
+       
+       
+    }
+}
+
+@media screen and (max-width:650px)  {
+    div.container-form{
+   
+        width: 80%;
+
+        margin-left: 10vw;
+        margin-top: 15%;
+       
+       
+    }
+
+    p#forget-pass{
+        
+        left: 40%;
+    }
+}
+
+
+
+
+@media screen and (max-width:550px)  {
+    p#sign-up{
+        
+        left: 0%;
+        font-size: 1rem;
+        
+    }
+
+   div.container-form{
+    font-size: 1rem;
+    height: 60%;
+    margin-top:25%;
+   }
+
+
+   div form button{
+  
+    width: 35%;
+    height: 5vh;
+
+    font-size: 1rem;
+   
+}
+
+p#sign-up{
+
+    font-size: 1rem;
+}
+
+div form input{
+    border-radius: 8px;
+    width:80%;
+    height: 6vh;
+    font-size: large;
+}
+
+p#forget-pass{
+        
+    left: 50%;
+}
+}
+
+
+
+@media screen and (max-width:400px) {
+
+
+       p#sign-up{
+        font-size: 0.8rem;
+       }
+
+
+    p#forget-pass{
+        
+        font-size: 0.8rem;
+        
+    }
+}
+
+@media screen and (max-width:300px)  {
+    p#sign-up{
+        
+        left: -4%;
+        font-size:0.6rem;
+        
+    }
+
+   div.container-form{
+  
+
+    margin-top: 40%;
+    
+   }
+
+
+   p#forget-pass{
+        
+    left: 40%;
+    font-size: 0.5rem;
+}
+  
+}
+
+
+@media screen and (max-width:200px)  {
+
+
+   div.container-form{
+
+    font-size: 9px;
+    height: fit-content;
+    margin-top: 80%;
+    
+   }
+
+
+
+  
+}
