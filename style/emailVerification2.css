@@ -9,7 +9,7 @@
     z-index: 1;
 }
 div h2{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: white;
     
 }
@@ -20,7 +20,9 @@ input#container-emailV{
     font-size: x-large;
 }
 div hr{
-    width: 90%;
+    position: relative;
+    left: 10%;
+    width: 80%;
 }
 button.container-button{
     width: 30%;
@@ -42,4 +44,16 @@ button.container-button:hover{
 div form{
     position: relative;
     left: 8%;
+}
+.title-h2{
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    
+}
+.title-h3{
+    color: rgb(24, 200, 133);
+    font-size: 1.6rem;
+    position: relative;
+    left: 25%;
 }
