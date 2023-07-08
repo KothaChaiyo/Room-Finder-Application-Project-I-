@@ -1,0 +1,45 @@
+.container{
+    background-color: rgba(5,51,101,0.8);
+    position: relative;
+    left: 30%;
+    top: 25vh;
+    width: 35%;
+    height: 35vh;
+    border-radius: 7px;
+    z-index: 1;
+}
+div h2{
+    font-size: 2.5rem;
+    color: white;
+    
+}
+input#container-emailV{
+    width: 80%;
+    height: 8vh;
+    border-radius: 8px;
+    font-size: x-large;
+}
+div hr{
+    width: 80%;
+}
+button.container-button{
+    width: 30%;
+    height: 7vh;
+    position: relative;
+    left: 30%;
+    border-radius: 8px;
+    background-color: rgb(24, 200, 133);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    
+}
+button.container-button:hover{
+    color: white;
+    background: #102b7b;
+    cursor: pointer;
+}
+div form{
+    position: relative;
+    left: 8%;
+}
