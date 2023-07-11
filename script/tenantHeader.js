@@ -244,9 +244,9 @@ p#copyrightText{
 <body>
 
 <div class="sidebar">
-  <a href="#home"><i class="fa fa-fw fa-home"></i> Home</a>
-  <a href="#clients"><i class="fa fa-fw fa-user"></i>Account Information</a>
-  <a href="#contact"><i class="fa fa-fw fa-sign-out"></i> Log Out</a>
+  <a href="" id="home"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="" id="accountInformation"><i class="fa fa-fw fa-user"></i>Account Information</a>
+  <a href="" id="logOut"><i class="fa fa-fw fa-sign-out"></i> Log Out</a>
   
   <p id="copyrightText">&copy; 2023 Kotha Chaiyo</p>
 </div>
