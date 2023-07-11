@@ -1,0 +1,26 @@
+.container{
+    margin: 8vh 0 0 20%;
+}
+.container p{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+div.container-imageCarousel{
+    background-color: rgba(5,51,101,0.8);
+    width: 40%;
+    height: 20vh;
+}
+div.container-map{
+    background-color: rgba(5,51,101,0.8);
+    width: 40%;
+    height: 20vh;
+}
+span{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.container-description{
+    font-size: 2rem;
+    font-weight: normal;
+    width: 50%;
+}
