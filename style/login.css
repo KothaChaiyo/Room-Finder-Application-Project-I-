@@ -53,7 +53,7 @@ p#sign-up a{
 }
 
 p#sign-up a:hover{
-   background-color:#102b7b
+   background-color:#102b7b;
 }
 div.container-form h2,h3{
     text-align: center;
