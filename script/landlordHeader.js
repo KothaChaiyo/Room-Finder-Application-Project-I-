@@ -244,7 +244,7 @@ p#copyrightText{
 
 <div class="sidebar">
   <a href="" id="home"><i class="fa fa-fw fa-home"></i> Home</a>
-  <a href="" id="addListing><i class="fa fa-fw fa-plus"></i>Add Listing</a>
+  <a href="" id="addListing"><i class="fa fa-fw fa-plus"></i>Add Listing</a>
   <a href="" id="accountInformation"><i class="fa fa-fw fa-user"></i>Account Information</a>
   <a href="" id="logOut"><i class="fa fa-fw fa-sign-out"></i> Log Out</a>
   
