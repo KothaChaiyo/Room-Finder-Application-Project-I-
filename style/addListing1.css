@@ -1,0 +1,40 @@
+.addListingContainer{
+    justify-content: center;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    position:relative;
+    top:0px;
+    left: 0px;
+    opacity: 0.8;
+    background: #053367;
+    mix-blend-mode:multiply;
+    overflow: scroll;
+    scroll-behavior: auto;
+}
+
+
+
+.addListingFormContainer{
+    width: 70%;
+    height: 60%;
+    text-align: left;
+    padding: 51px;
+}
+
+#addListingTitle{
+    text-align: center;
+    color:#18C885;
+    padding: 10px;
+    font-size: 4.5vw;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.addListingFormContainer{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    padding: 12px;
+}
