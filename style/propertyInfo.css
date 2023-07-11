@@ -1,5 +1,16 @@
+
+
+
+.main{
+   position: absolute;
+}
+
 .container{
-    margin: 8vh 0 0 20%;
+    margin: 2vh 0 0 10%;
+}
+
+.container-head{
+    color: rgb(24, 200, 133);
 }
 .container p{
     font-size: 3rem;

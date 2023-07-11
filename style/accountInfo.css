@@ -1,16 +1,20 @@
 .container{
     /* background-color:rgba(5,51,101,0.8); */
-    margin: 30vh 0 0 10%;
+    margin: 3vh 0 0 10%;
     width: 40%;
     height: 25vh;
-
 }
 .container-head{
     font-size: 3rem ;
     font-weight: bolder;
-    /* color: rgb(24, 200, 133); */
+    color: rgb(24, 200, 133);
 }
 div.container{
     font-size: 2rem;
     /* color: white; */
 }
+
+#accountInformation{
+    color:rgb(24, 200, 133);
+}
+
