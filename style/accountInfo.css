@@ -17,4 +17,94 @@ div.container{
 #accountInformation{
     color:rgb(24, 200, 133);
 }
+@media screen and (max-width:1560px)  {
+    div.container{
+        font-size: 1.7rem;
+    }
+}
+@media screen and (max-width:1415px)  {
+    .container-head{
+        font-size: 2.9rem;
+    }
+}
+@media screen and (max-width:1370px)  {
+    .container-head{
+        font-size: 2.5rem;
+    }
+    div.container{
+        font-size: 1.5rem;
+        /* color: white; */
+    }
+
+}
+@media screen and (max-width:1190px)  {
+    .container-head{
+        font-size: 2.2rem;
+    }
+    div.container{
+        font-size: 1.2rem;
+        /* color: white; */
+    }
+}
+@media screen and (max-width:1090px)  {
+    .container-head{
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width:975px)  {
+    div.container{
+        font-size: .8rem;
+    }
+}
+@media screen and (max-width:890px)  {
+    .container-head{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width:760px)  {
+    .container-head{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width:600px)  {
+    .container-head{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width:760px)  {
+    .container-head{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:555px)  {
+    div.container{
+        font-size: .5rem;
+    }
+}
+@media screen and (max-width:430px)  {
+    .container-head{
+        font-size: .8rem;
+    }
+}
+@media screen and (max-width:355px)  {
+    .container-head{
+        font-size: .5rem;
+    }
+    div.container{
+        font-size: .3rem;
+    }
+}
+@media screen and (max-width:224px)  {
+    .container-head{
+        font-size: .3rem;
+    }
+    div.container{
+        font-size: .2rem;
+    }
+}
+
+
+
+
 
