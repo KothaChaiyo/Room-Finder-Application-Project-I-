@@ -10,7 +10,7 @@
 
     <!-- for general styling of components  -->
     <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./style/addListing1.css">
+    <link rel="stylesheet" href="./style/addListing2.css">
 
 
     <!-- for animation of components -->
@@ -31,9 +31,15 @@
       <div class="addListingFormContainer" id="addListing1">
         <h2 id="addListingTitle">Add Listing</h2>
         <form action="" method="get">
-          <label for="propertyTitle" class="formLabel">Title</label>
-          <input type="text" name="propertyTitle" id="propertyTitle" class="inputTextFelid" required><br>
-          <label for="location" class="formLabel" >Location</label>
+
+            <label for="wifiAvailable" class="formLabel">Is wifi available ?</label>
+            
+            <label for="wifiAvailable" class="formLabel">Is wifi available ?</label>
+            <input type="radio" name="propertyTitle" id="propertyTitle" class="inputTextFelid" required><br>
+            <label for="location" class="formLabel" >Location</label>
+            <input type="radio" name="propertyTitle" id="propertyTitle" class="inputTextFelid" required><br>
+            <label for="location" class="formLabel" >Location</label>
+            
           <input type="text" placeholder="Eg: single room 1BHk" name="location" id="propertyTitle" class="inputTextFelid" required><br>
           <label for="size" class="formLabel" >Size</label>
           <input type="text" name="size" id="propertySize" class="inputTextFelid" required><br>
@@ -41,7 +47,7 @@
           <input type="number" name="rent" id="propertyRent" class="inputTextFelid" required><br>
           <label for="description" class="formLabel" >Description</label>
           <textarea name="Description" id="propertyDescription" class="inputTextFelid" cols = "30" rows="5"></textarea><br>
-          <input type="submit" value="Next" class="inputButton" action = "addListing2.html">
+          <input type="submit" value="Next" class="inputButton">
         </form>
       </div>
       </div>
