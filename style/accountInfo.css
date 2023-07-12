@@ -1,7 +1,19 @@
-.container{
+
+.main{
     /* background-color:rgba(5,51,101,0.8); */
-    margin: 3vh 0 0 10%;
-    width: 40%;
+    height: 60vh;
+    width: 50%;
+    margin-top: 5%;
+    margin-left:20%;
+    border: 1px solid black;
+    border-radius: 0px 25px 25px 25px;
+    box-shadow: 6px 6px 6px green;
+
+}.container{
+    /* margin: 3h 0 0 10%; */
+    position: absolute;
+    left: 30%;
+    width: 60%;
     height: 25vh;
 }
 .container-head{
@@ -9,12 +21,152 @@
     font-weight: bolder;
     color: rgb(24, 200, 133);
 }
+.no-bold span{
+    font-weight: normal;
+    color: black;
+}
+span.bold{
+    font-weight: bold;
+    color: green;
+}
+
 div.container{
     font-size: 2rem;
     /* color: white; */
 }
-
+.container-img img{
+    width: 20%;
+    height: 90%;
+    margin-left: 8%;
+}
 #accountInformation{
     color:rgb(24, 200, 133);
 }
+@media screen and (max-width:1560px)  {
+    div.container{
+        font-size: 1.7rem;
+    }
+    .container-img img{
+        width: 19%;
+        height: 65%;
+        
+    }
+}
+@media screen and (max-width:1530) {
+    .container-img img{
+        width: 17%;
+        height: 59%;
+        
+    } 
+}
+@media screen and (max-width:1415px)  {
+    .container-head{
+        font-size: 2.9rem;
+    }
+    .container-img img{
+        width: 16%;
+        height: 55%;
+        
+    }
+}
+@media screen and (max-width:1370px)  {
+    .container-head{
+        font-size: 2.5rem;
+    }
+    div.container{
+        font-size: 1.5rem;
+        /* color: white; */
+    }
+    .container-img img{
+        width: 15%;
+        height: 45%;
+        
+    }
+
+}
+@media screen and (max-width:1190px)  {
+    .container-head{
+        font-size: 2.2rem;
+    }
+    div.container{
+        font-size: 1.2rem;
+        /* color: white; */
+    }
+    .container-img img{
+        width: 14%;
+        height: 42%;
+        
+    }
+}
+@media screen and (max-width:1090px)  {
+    .container-head{
+        font-size: 1.8rem;
+    }
+    .container-img img{
+        width: 13%;
+        height: 38%;
+        
+    }
+}
+
+@media screen and (max-width:975px)  {
+    div.container{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:890px)  {
+    .container-head{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width:760px)  {
+    .container-head{
+        font-size: 1.3rem;
+    }
+}
+/* @media screen and (max-width:600px)  {
+    .container-head{
+        font-size: 1.2rem;
+    }
+} */
+
+@media screen and (max-width:555px)  {
+    div.container{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:460px)  {
+    .container-head{
+        font-size: 1rem;
+    }
+    div.container{
+        font-size: .8rem;
+    }
+}
+@media screen and (max-width:390px)  {
+    div.container{
+        font-size: .7rem;
+    }
+}
+@media screen and (max-width:355px)  {
+    .container-head{
+        font-size: .8rem;
+    }
+    div.container{
+        font-size: .6rem;
+    }
+}
+@media screen and (max-width:224px)  {
+    .container-head{
+        font-size: .3rem;
+    }
+    div.container{
+        font-size: .2rem;
+    }
+}
+
+
+
+
 
