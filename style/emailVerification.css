@@ -2,38 +2,57 @@
     background-color: rgba(5,51,101,0.8);
     position: relative;
     left: 30%;
-    top: 25vh;
-    width: 35%;
-    height: 35vh;
+    top: 90px;
+    width: 40%;
+    height: 28vw;
     border-radius: 20px;
-    z-index: 1;
+    z-index: 2;
+  
+   
 }
+
+input{
+    text-align: center;
+    font-weight: bolder;
+}
+
 div h2{
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: white;
+    margin-top: 2vw;
+ 
     
 }
+
+
 input#container-emailV{
     width: 80%;
     height: 8vh;
     border-radius: 8px;
     font-size: x-large;
+    margin-top: 1vw;
 }
 div hr{
     position: relative;
     left: 10%;
     width: 80%;
 }
+
+
+
+
 button.container-button{
     width: 30%;
     height: 7vh;
     position: relative;
-    left: 30%;
+    left: 33%;
     border-radius: 8px;
     background-color: rgb(24, 200, 133);
     color: white;
     font-size: 1.5rem;
     font-weight: bolder;
+    margin-top: 1vw;
+    border: none;
     
 }
 button.container-button:hover{
@@ -47,13 +66,159 @@ div form{
 }
 .title-h2{
     text-align: center;
-    font-size: 2.5rem;
-    color: white;
+    font-size: 3.5rem;
+    color: rgb(24, 200, 133);
+
     
 }
 .title-h3{
-    color: rgb(24, 200, 133);
     font-size: 1.6rem;
-    position: relative;
-    left: 25%;
+   
+    color: white;
+
+
 }
+
+.title-h2, .title-h3{
+    text-align: center;
+}
+
+
+@media screen and (max-width:1800px) {
+    
+    .title-h2{
+      
+        font-size: 2.5rem;
+      
+    
+        
+    }
+    .title-h3{
+        font-size: 1.3rem;
+       
+    
+    }
+
+    div h2{
+        font-size: 1.5rem;
+        
+     
+        
+    }
+
+}
+
+
+
+@media screen and (max-width:1500px) {
+    
+.container{
+    height: 450px;
+}
+
+}
+
+
+
+@media screen and (max-width:1400px) {
+    
+    .container{
+        width: 50%;
+    }
+    
+    }
+
+
+
+@media screen and (max-width:950px) {
+    
+    .container{
+        width: 60%;
+        left:20%;
+        height: 400px;
+    }
+
+    .title-h2{
+      
+        font-size: 2rem;
+      
+    
+        
+    }
+    .title-h3{
+        font-size: 1rem;
+       
+    
+    }
+
+    div h2{
+        font-size: 1.2rem;
+        
+     
+        
+    }
+    
+    }
+
+
+    @media screen and (max-width:800px) {
+    
+        .container{
+            width: 70%;
+            left:15%;
+            height: 400px;
+        }
+    
+
+
+        
+        }
+
+
+        @media screen and (max-width:800px) {
+    
+            .container{
+                width: 80%;
+                left:10%;
+                height: 350px;
+                top:140px;
+            }
+        
+    
+    
+            
+            }
+
+
+
+        @media screen and (max-width:500px) {
+    
+            
+            .title-h2{
+      
+                font-size: 1.8rem;
+              
+            
+                
+            }
+            .title-h3{
+                font-size: 0.7rem;
+               
+            
+            }
+        
+            div h2{
+                font-size: 1rem;
+                
+             
+                
+            }
+
+            .container{
+                width: 90%;
+                left: 5%;
+            }
+    
+    
+            
+            }
