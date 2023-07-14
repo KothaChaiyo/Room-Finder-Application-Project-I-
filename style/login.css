@@ -15,6 +15,7 @@ div.container-form{
     font-weight: bolder;
     z-index: 1;
     border-radius: 20px;
+    padding-left: 3vw;
    
 }
 
@@ -25,7 +26,8 @@ input{
 
 
 div.container-form hr{
-    width: 75%;
+    width: 90%;
+    
 }
 
 div form{
