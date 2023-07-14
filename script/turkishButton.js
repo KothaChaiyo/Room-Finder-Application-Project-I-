@@ -127,6 +127,8 @@ function validationInfo(){
     }else if(!validateEmail(email.value)){
       
         return 5;
+    }else if(contact.value==""){
+        return 6;
     }
     else{
         console.log(email.value);
@@ -139,7 +141,6 @@ function isValid(){
     if ((validationInfo()) == 200)
     return true;
     else return false;
-
 }
 
 
@@ -153,12 +154,17 @@ function getValidationInfo(){
             alert('2 Empty Password')
             break
         case 3:
-            alert('3 Minium 3 characters required')
+            alert('3 Minimum 3 characters required')
             break
         case 4:
-            alert('4 Minium 3 characters required')
+            alert('4 Minimum 3 characters required')
+            break
         case 5:
             alert('5 Please Enter a valid Email')
+            break
+        case 6:
+             alert("Please enter your contact number")
+             break 
 
     }
 }
