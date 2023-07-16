@@ -13,8 +13,8 @@ document.write(`
     </div>
     </section>
 
-    <div class="hidden" id="backgroundImage"></div>
-    <div class="hidden" id="backgroundColor"></div>
+    <div  class="hidden" id="backgroundImage"></div>
+    <div  class="hidden" id="backgroundColor"></div>
 
 
 

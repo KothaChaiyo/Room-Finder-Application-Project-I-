@@ -10,18 +10,26 @@
 
     <!-- for general styling of components  -->
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/signUp.css">
 
     <!-- for animation of components -->
     <link rel="stylesheet" href="./style/animation.css">
     <script src="./script/index.js" defer></script>
     <script defer src="script\turkishButton.js"></script>
   
+
+    <style>
+        #backgroundColor, #backgroundImage{
+            background-size: cover;
+        }
+
+    </style>
 </head>
 <body style="background-image: url('Images\homeBackground.jpg'); background-repeat: no-repeat; background-attachment: fixed; ">
 
 
     <!-- This includes all the Navbar and relevant heading section-->
-    <script src="Header.js"></script>
+    <script src="./script/header.js"></script>
 
     <div class="signUpContainer">
             <form action="" method="get" id="signUpForm">
@@ -33,12 +41,12 @@
                 <input type="text" id="lName" name="lName" class="inputTextFelid"><br>
                 <label for="uEmail" class="formLabel">Email:</label><br>
                 <input type="email" id="uEmail" name="lName" class="inputTextFelid"><br>
-                <label for="password" class="formLabel">Enter your password:</label><br>
+                <label for="password" class="formLabel">Create a password:</label><br>
                 <input type="password" name="password" id="password" class="inputTextFelid"><br>
                 <label for="rePassword" class="formLabel">Re Enter your password:</label><br>
                 <input type="password" name="rePassword" id="rePassword" class="inputTextFelid"><br>
                 <label for="contact" class="formLabel">Contact No:</label><br>
-                <input type="text" name="contact" id="contact" class="inputTextFelid"><br>
+                <input type="number" name="contact" id="contact" class="inputTextFelid"><br>
                     <h4>Join As:</h4>
                     <!-- <input type="radio" id="joinChoice1" name="joinAs" value="LandLord" />
                     <label for="joinChoice1">LandLord</label>
@@ -50,7 +58,7 @@
 
             </form>
     </div>
-    
+
     
 </body>
 </html>

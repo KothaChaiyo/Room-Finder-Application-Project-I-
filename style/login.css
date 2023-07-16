@@ -15,13 +15,21 @@ div.container-form{
     font-weight: bolder;
     z-index: 1;
     border-radius: 20px;
+    padding-left: 3vw;
+   
 }
 
+input{
+    text-align: center;
+    font-weight: bolder;
+}
 
 
 div.container-form hr{
-    width: 75%;
+    width: 90%;
+    
 }
+
 div form{
     left: 10%;
 }
@@ -53,12 +61,21 @@ p#sign-up a{
 }
 
 p#sign-up a:hover{
-   background-color:#102b7b
+   background-color:#102b7b;
 }
 div.container-form h2,h3{
     text-align: center;
+   
+}
+
+div.container-form h2{
     color: rgb(24, 200, 133);
-    
+    font-size: 3rem;
+
+}
+
+div.container-form h3{
+    color:white;
 }
 div form input{
     border-radius: 8px;
@@ -95,6 +112,18 @@ div form button:hover{
         width: 50%;
        
     }
+
+    div.container-form h2{
+       
+        font-size: 2rem;
+    
+    }
+    
+    div.container-form h3{
+        font-size: 1rem;
+    }
+
+
 }
 
 
@@ -201,6 +230,16 @@ p#forget-pass{
         
         font-size: 0.8rem;
         
+    }
+
+    div.container-form h2{
+      
+        font-size: 1.6rem;
+    
+    }
+    
+    div.container-form h3{
+       font-size: 0.8rem;
     }
 }
 
