@@ -87,6 +87,7 @@ div#nav ul li, div#nav ul li a , div#nav ul li a img{
     background: #102b7b;
     mix-blend-mode:multiply;
     z-index: 1;
+    overflow: visible;
 
 }
 
@@ -485,6 +486,69 @@ div#mobileNavBar{
     }
 
 }
+
+
+.signUpContainer{
+    margin: auto;
+    margin-top: 3vh;
+    background-color: #053367;
+    width: 30%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 3vh;
+    text-align: center;
+    color: #D1F1FF;
+    height: 80%;
+    overflow: hidden;
+
+}
+
+.inputTextFelid{
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: .5px;
+    margin: 10px 0;
+    font-size: larger;
+
+
+}
+
+form{
+    position: relative;
+    z-index: 1;
+} 
+
+.formLabel{
+
+    font-size: 3vh;
+    padding: 2px;
+    color: #D1F1FF;
+
+}
+
+.inputButton{ /* Also used in  forms of add listing */
+    font-size: 2vh;
+    background-color: #2AFFAD;
+    border-color: #2AFFAD;
+    display: inline-block;
+    border-radius: 5px;
+    height:50px;
+    width: 30%;
+    
+}
+.inputButton#landLord{   
+    float:left;
+    position: relative;
+}
+.inputButton#tenant{
+    position: relative;
+    float:right;
+    
+}
+
 
 
 
