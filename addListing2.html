@@ -28,28 +28,41 @@
     </div>
     <div class="addListingContainer">
       <div class="addListingContainerForm">
-      <div class="addListingFormContainer" id="addListing1">
-        <h2 id="addListingTitle">Add Listing</h2>
-        <form action="" method="get">
+        <div class="addListingFormContainer" id="addListing1">
+          <h2 id="addListingTitle">Add Listing</h2>
+          <form action="" method="get">
 
-            <label for="wifiAvailable" class="formLabel">Is wifi available ?</label>
-            
-            <label for="wifiAvailable" class="formLabel">Is wifi available ?</label>
-            <input type="radio" name="propertyTitle" id="propertyTitle" class="inputTextFelid" required><br>
-            <label for="location" class="formLabel" >Location</label>
-            <input type="radio" name="propertyTitle" id="propertyTitle" class="inputTextFelid" required><br>
-            <label for="location" class="formLabel" >Location</label>
-            
-          <input type="text" placeholder="Eg: single room 1BHk" name="location" id="propertyTitle" class="inputTextFelid" required><br>
-          <label for="size" class="formLabel" >Size</label>
-          <input type="text" name="size" id="propertySize" class="inputTextFelid" required><br>
-          <label for="rent" class="formLabel" >Rent</label>
-          <input type="number" name="rent" id="propertyRent" class="inputTextFelid" required><br>
-          <label for="description" class="formLabel" >Description</label>
-          <textarea name="Description" id="propertyDescription" class="inputTextFelid" cols = "30" rows="5"></textarea><br>
-          <input type="submit" value="Next" class="inputButton">
-        </form>
-      </div>
+            <label for="wifiAvailable" class="formLabel">Is wifi available ?</label><br>
+            <label for="wifiAvailableYes" class="formLabel">Yes</label>
+            <input type="radio" name="wifiAvailable" id="wifiAvailableYes" class="inputTextFelidRadio" value="wifiAvailableYes" required="required">
+            <label for="wifiAvailableNo" class="formLabel">No</label>
+            <input type="radio" name="wifiAvailable" id="wifiAvailableNO" class="inputTextFelidRadio"  Value = "wifiAvailableNo" required="required">
+                  
+            <br>
+            <br>
+          
+            <label for="runningWater" class="formLabel">Is running Water available ?</label><br>
+            <label for="runningWaterYes" class="formLabel">Yes</label>
+            <input type="radio" name="runningWater" id="wifiAvailableYes" class="inputTextFelidRadio" value="runningWaterYes" required="required">
+            <label for="runningWaterNo" class="formLabel">No</label>
+            <input type="radio" name="runningWater" id="runningWaterNo" class="inputTextFelidRadio"  Value = "runningWaterNo" required="required">
+
+            <br>
+            <br>
+
+            <label for="Upload Image" class="formLabel">Please Upload Images of Flat:</label><br>
+            <input type="file" accept="image/*" id="flatImage1" class="formLabel" required="required"><br>
+            <input type="file" accept="image/*" id="flatImage2" class="formLabel"><br>
+            <input type="file" accept="image/*" id="flatImage3" class="formLabel"><br>
+
+            <div class="map" id="mapLocation">
+
+            </div>
+
+            <input type="submit" value="Finish" class="inputButton" action = "" id="addListingFinish">
+
+          </form>
+        </div>
       </div>
     </div>
 </body>
