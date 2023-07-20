@@ -44,7 +44,7 @@ TO CREATE DATABASE AND CONNECT TO IT:
         -> Directly run create.php file (it is under Public folder)
 
         
-  To connect to database in the file your are working on:
+  To import database connection to the file your are working on:
         
         -> include connect.php (it is under Public folder) in your file
         -> $connection is defined as connection variable in connect.php , use that while making queries
