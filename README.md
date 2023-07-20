@@ -34,6 +34,28 @@ TO CONTRIBUTE:
 
 
 
+
+
+TO CREATE DATABASE AND CONNECT TO IT:
+
+
+   To create required database and table in your local system:
+
+        -> Directly run create.php file (it is under Public folder)
+
+        
+  To connect to database in the file your are working on:
+        
+        -> include connect.php (it is under Public folder) in your file
+        -> $connection is defined as connection variable in connect.php , use that while making queries
+
+        Example:
+                        mysqli_query($connection , $yourQuery)
+
+
+
+
+
 Font family:
 
 font-family : system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
