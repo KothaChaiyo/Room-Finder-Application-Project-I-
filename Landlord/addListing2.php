@@ -1,3 +1,28 @@
+
+<?php
+session_start();
+
+
+
+if(!isset($_SESSION['lname']) || !isset($_SESSION['lemail']) || !isset($_SESSION['lcontact'])){
+
+    header("HTTP/1.0 404 Not Found");
+    echo "<h1>404 Not Found</h1>";
+    echo "The requested URL was not found on this server.";
+    exit;
+
+}
+
+
+
+
+
+include 'landlordHeader.php';
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,16 +34,16 @@
     <link rel="icon" href="../Public/Images/NOSK_Logo_with_Tagline.png">
 
     <!-- for general styling of components  -->
-    <link rel="stylesheet" href="../Public/style/style.css">
-    <link rel="stylesheet" href="../Public/style/addListing2.css">
+    <!-- <link rel="stylesheet" href="../Public/style/style.css"> -->
+    <!-- <link rel="stylesheet" href="../Public/style/addListing2.css"> -->
 
 
     <!-- for animation of components -->
-    <link rel="stylesheet" href="../Public/style/animation.css">
+    <!-- <link rel="stylesheet" href="../Public/style/animation.css"> -->
 
-    <script src="../Public/script/index.js" defer></script>
+    <!-- <script src="../Public/script/index.js" defer></script> -->
 
-    <script src="../Public/script/landlordHeader.js"></script>
+    <!-- <script src="../Public/script/landlordHeader.js"></script> -->
 
     <title>AddListing</title>
 </head>

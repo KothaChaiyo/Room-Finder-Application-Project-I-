@@ -1,4 +1,4 @@
-document.write(`<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -108,6 +108,7 @@ p#copyrightText{
   color: #053367;
   padding: 12px 15px;
   border: none;
+  
 }
 
 
@@ -243,10 +244,9 @@ p#copyrightText{
 <body>
 
 <div class="sidebar">
-  <a href="" id="home"><i class="fa fa-fw fa-home"></i> Home</a>
-  <a href="" id="addListing"><i class="fa fa-fw fa-plus"></i>Add Listing</a>
-  <a href="" id="accountInformation"><i class="fa fa-fw fa-user"></i>Account Information</a>
-  <a href="" id="logOut"><i class="fa fa-fw fa-sign-out"></i> Log Out</a>
+  <a href="./tenantHome.php" id="home"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="./accountInfo.php" id="accountInformation"><i class="fa fa-fw fa-user"></i>Account Information</a>
+  <a href="../Public/logout.php" id="logOut"><i class="fa fa-fw fa-sign-out"></i> Log Out</a>
   
   <p id="copyrightText">&copy; 2023 Kotha Chaiyo</p>
 </div>
@@ -255,10 +255,9 @@ p#copyrightText{
 <!-- mobile sidebar html begins  -->
 <div id="mobileSidebar" class="sbar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    <a href=""><i class="fa fa-fw fa-home"></i> Home</a>
-    <a href=""><i class="fa fa-fw fa-plus"></i>Add Listing</a>
-    <a href=""><i class="fa fa-fw fa-user"></i>Account Information</a>
-    <a href=""><i class="fa fa-fw fa-sign-out"></i> Log Out</a>
+    <a href="./tenantHome.php"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a href="./accountInfo.php"><i class="fa fa-fw fa-user"></i>Account Information</a>
+    <a href="../Public/logout.php"><i class="fa fa-fw fa-sign-out"></i> Log Out</a>
     <p id="copyrightTextMobile">&copy; 2023 Kotha Chaiyo</p>
   </div>
   
@@ -299,4 +298,4 @@ p#copyrightText{
 </script>
      
 </body>
-</html> `);
+</html>

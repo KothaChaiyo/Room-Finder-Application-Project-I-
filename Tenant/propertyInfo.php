@@ -1,3 +1,23 @@
+<?php
+
+session_start();
+
+if(!isset($_SESSION['tname']) || !isset($_SESSION['temail']) || !isset($_SESSION['tcontact'])){
+
+    header("HTTP/1.0 404 Not Found");
+    echo "<h1>404 Not Found</h1>";
+    echo "The requested URL was not found on this server.";
+    exit;
+
+}
+
+
+include 'tenantHeader.php';
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,7 +25,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Property Information</title>
     <link rel="stylesheet" href="../Public/style/propertyInfo.css">
-    <script src="../Public/script/tenantHeader.js"></script>
+    <!-- <script src="../Public/script/tenantHeader.js"></script> -->
 
   </head>
   <body>
