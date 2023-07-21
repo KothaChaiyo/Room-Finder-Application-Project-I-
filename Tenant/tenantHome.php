@@ -11,9 +11,8 @@ if(!isset($_SESSION['tname']) || !isset($_SESSION['temail']) || !isset($_SESSION
 
 }
 
-echo "Tenant Homepage <br>";
-echo "Welcome!!! "; 
-echo $_SESSION['tname'];
+include 'tenantHeader.php';
+
 ?>
 
 <!DOCTYPE html>
@@ -24,13 +23,23 @@ echo $_SESSION['tname'];
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        
-    </style>
+    <link rel="stylesheet" href="../Public/style/tenantHome.css">
+    <!-- <script src="../Public/script/tenantHeader.js"></script> -->
+ 
 </head>
 
 <body>
+
+<section class="main">
+    <?php
+echo "Tenant Homepage <br>";
+echo "Welcome!!! "; 
+echo $_SESSION['tname'];
+
+?>
     <a href="../Public/logout.php"target="_self">Logout</a>
+
+</section>
     
 </body>
 </html>

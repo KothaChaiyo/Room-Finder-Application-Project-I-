@@ -2,6 +2,8 @@
 <?php
 session_start();
 
+
+
 if(!isset($_SESSION['lname']) || !isset($_SESSION['lemail']) || !isset($_SESSION['lcontact'])){
 
     header("HTTP/1.0 404 Not Found");
@@ -11,10 +13,16 @@ if(!isset($_SESSION['lname']) || !isset($_SESSION['lemail']) || !isset($_SESSION
 
 }
 
-echo "Landlord Homepage <br>";
-echo "Welcome!!! "; 
-echo $_SESSION['lname'];
+
+
+
+
+include 'landlordHeader.php';
+
 ?>
+
+
+
 
 
 <!DOCTYPE html>
@@ -25,13 +33,27 @@ echo $_SESSION['lname'];
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        
-    </style>
+
+    <!-- <script src="../Public/script/landlordHeader.js"></script> -->
+     <link rel="stylesheet" href="../Public/style/landlordHome.css">
 </head>
 
 <body>
+
+<section class="main">
+
+
+
+<?php
+    echo "Landlord Homepage <br>";
+echo "Welcome!!! "; 
+echo $_SESSION['lname'];
+
+
+?>
     <a href="../Public/logout.php"target="_self">Logout</a>
+
+    </section>
     
 </body>
 </html>

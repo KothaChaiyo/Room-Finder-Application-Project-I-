@@ -1,3 +1,27 @@
+
+<?php
+session_start();
+
+
+
+if(!isset($_SESSION['lname']) || !isset($_SESSION['lemail']) || !isset($_SESSION['lcontact'])){
+
+    header("HTTP/1.0 404 Not Found");
+    echo "<h1>404 Not Found</h1>";
+    echo "The requested URL was not found on this server.";
+    exit;
+
+}
+
+
+
+
+
+include 'landlordHeader.php';
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,10 +29,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Account Information</title>
     <link rel="stylesheet" href="../Public/style/accountInfo.css" />
-    <script src="../Public/script/landlordHeader.js" "defer"></script>
+    <!-- <script src="../Public/script/landlordHeader.js" "defer"></script> -->
   
   </head>
   <body>
+  
     <section class="main">
     <div class="container"style="">
       <p class="container-head">Account Information</p>
