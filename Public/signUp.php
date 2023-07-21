@@ -9,6 +9,9 @@ $fNameerr = $lNameErr = $emailErr=$passwordErr= $cpasswordErr=$contactErr="";
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
+
+
+
     if (($_POST['fName'])=="") {
         $fNameErr = "First name cant be empty";
     } else {
@@ -31,8 +34,22 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
     //Email validation
 
-        //TODO : check if email is already taken by other users
+    $Email = $_POST['email'];
 
+    $query1 = "select * from landlord where email ='$Email'";
+    $query2 = "select * from tenant where email ='$Email'";
+    $queryL = mysqli_query($connection,$query1);
+    $queryT = mysqli_query($connection,$query2);
+    $countLandlord = mysqli_num_rows($queryL);
+    $countTenant = mysqli_num_rows($queryT);
+    
+
+    if($countLandlord!=0 || $countTenant!=0){
+        $emailErr = "Email already taken";
+        // echo "<script>document.write(`Email already taken`)</script>";
+    }else{
+        $emailErr = "";
+    }
 
     if (($_POST['email'])=="") {
         $emailErr = "Email cant be empty";
@@ -127,17 +144,17 @@ function input_data($data)
                 <h3 class=".formLabel">Sign Up!!</h2>
                 <hr>
                 <label for="fName" class="formLabel">First name:</label><br>
-                <input type="text" id="fName" name="fName" class="inputTextFelid"><br> <p style="color:red;" id="fNameErr"></p> 
+                <input type="text" id="fName" name="fName" class="inputTextFelid"><br> <p style="color:red; font-size:1.5rem;" id="fNameErr"></p> 
                 <label for="lName" class="formLabel">Last name:</label><br>
-                <input type="text" id="lName" name="lName" class="inputTextFelid"><br>   <p style="color:red;" id="lNameErr"></p> 
+                <input type="text" id="lName" name="lName" class="inputTextFelid"><br>   <p style="color:red; font-size:1.5rem;" id="lNameErr"></p> 
                 <label for="uEmail" class="formLabel">Email:</label><br>
-                <input type="email" id="uEmail" name="email" class="inputTextFelid"><br>   <p style="color:red;" id="emailErr"></p> 
+                <input type="email" id="uEmail" name="email" class="inputTextFelid"><br>   <p style="color:red; font-size:1.5rem;" id="emailErr"></p> <p style="color:red;font-size:1.5rem"><?php echo $emailErr ?></p>
                 <label for="password" class="formLabel">Create a password:</label><br>
-                <input type="password" name="password" id="password" class="inputTextFelid"><br>   <p style="color:red;" id="passwordErr"></p> 
+                <input type="password" name="password" id="password" class="inputTextFelid"><br>   <p style="color:red; font-size:1.5rem" id="passwordErr"></p> 
                 <label for="rePassword" class="formLabel">Re Enter your password:</label><br>  
-                <input type="password" name="rePassword" id="rePassword" class="inputTextFelid"><br>   <p style="color:red;" id="rePasswordErr"></p> 
+                <input type="password" name="rePassword" id="rePassword" class="inputTextFelid"><br>   <p style="color:red; font-size:1.5rem" id="rePasswordErr"></p> 
                 <label for="contact" class="formLabel">Contact No:</label><br>
-                <input type="number" name="contact" id="contact" class="inputTextFelid"><br>    <p style="color:red;" id="contactErr"></p> 
+                <input type="number" name="contact" id="contact" class="inputTextFelid"><br>    <p style="color:red; font: size 1.5rem;" id="contactErr"></p> 
                     <h4>Join As:</h4>
                     <!-- <input type="radio" id="joinChoice1" name="joinAs" value="LandLord" />
                     <label for="joinChoice1">LandLord</label>
@@ -170,7 +187,7 @@ function input_data($data)
 if(isset($_POST["submit"])){
 
 
-if ($fNameerr == "" && $lNameErr == "" && $passwordErr == "" && $cpasswordErr =="" && $contactErr== "")
+if ($fNameerr == "" && $lNameErr == "" && $passwordErr == "" && $cpasswordErr =="" && $contactErr== "" && $emailErr=="")
 {
   
     
