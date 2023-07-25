@@ -18,13 +18,7 @@
 //     }
 
 
-let latitude = "";
-let longitude = "";
 
-
-
-setCookie("longitude", `${longitude}`);
-setCookie("latitude", `${latitude}`,);
 
 
 function setCookie(name, value, daysToExpire) {
