@@ -12,6 +12,8 @@ if(!isset($_SESSION['tname']) || !isset($_SESSION['temail']) || !isset($_SESSION
 }
 
 
+
+
 include 'tenantHeader.php';
 
 ?>
@@ -32,9 +34,9 @@ include 'tenantHeader.php';
     <div class="container"style="">
       <p class="container-head">Account Information</p>
       <span class="container-img"><img src="../Public/Images/username.png" alt="images"></span><br>
-      <spad class="no-bold">Name:</span> <span class="container-userName bold">Sandesh Khatiwada</span><br>
-      <span class="no-bold">Email:</span> <span class="container-email bold">sandesh.201547@ncit.edu.np</span><br>
-      <span class="no-bold">Contact&phone; :</span><span class="container-contact bold">9800000000</span><br>
+      <spad class="no-bold">Name:</span> <span class="container-userName bold"><?php echo $_SESSION['tname']?></span><br>
+      <span class="no-bold">Email:</span> <span class="container-email bold"><?php echo $_SESSION['temail']?></span><br>
+      <span class="no-bold">Contact&phone; :</span><span class="container-contact bold"><?php echo $_SESSION['tcontact']?></span><br>
     </div>
   </section>
   </body>
