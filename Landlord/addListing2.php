@@ -24,11 +24,24 @@ include 'landlordHeader.php';
 
 
 if (isset($_COOKIE['latitude']) && isset($_COOKIE['longitude'])) {
-  // Retrieve the cookie values
+//   // Retrieve the cookie values
   $latitude = $_COOKIE['latitude'];
   $longitude = $_COOKIE['longitude'];
 
+
   $coords = $latitude."+".$longitude;
+
+
+  setcookie("longitude", "", time() - 3600, "/");
+setcookie("latitude", "", time() - 3600, "/");
+
+
+
+
+
+  // setcookie("latitude", "", time() - 3600, "/");
+  // setcookie("longitude", "", time() - 3600, "/");
+
 
 
 
@@ -36,8 +49,12 @@ if (isset($_COOKIE['latitude']) && isset($_COOKIE['longitude'])) {
   // You can now use $latitude and $longitude in your PHP code
   // For example, echo them to display the values
   // echo "Latitude: " . $latitude . "<br>";
-  // echo "Longitude: " . $longitude;
+//   // echo "Longitude: " . $longitude;
+}else{
+  $coords = "";
 }
+
+
 
 
 
@@ -97,6 +114,7 @@ function input_data($data){
 
 
 if($_SERVER["REQUEST_METHOD"]=="POST"){
+
 
       $wifi=input_data($_POST['wifi']);
       $runningWater=input_data($_POST['runningWater']);
@@ -264,6 +282,11 @@ span#required{
 <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js" ></script>
 <script src="map.mjs" defer></script>
 
+
+<script>
+  
+</script>
+
 </head>
 <body>
 
@@ -277,7 +300,7 @@ span#required{
       <div class="addListingContainerForm">
         <div class="addListingFormContainer" id="addListing1">
           <h2 id="addListingTitle">Add Listing</h2>
-          <form action="" method="POST" enctype="multipart/form-data">
+          <form action="" method="POST" enctype="multipart/form-data" onsubmit="return validate();">
 
             <label for="wifiAvailable" class="formLabel">Is wifi available ?</label> <span id="required">*</span> <br>
             <label for="wifiAvailableYes" class="formLabel">Yes</label>
@@ -309,8 +332,8 @@ span#required{
 
             <label for="Upload Image" class="formLabel">Please Upload Images of Flat:</label> <span id="required">*</span> <br>
             <input type="file" name="image1" accept="image/*" id="flatImage1" class="formLabel" required> <br>
-            <input type="file" name="image2" accept="image/*" id="flatImage2" class="formLabel"><br>
-            <input type="file" name="image3" accept="image/*" id="flatImage3" class="formLabel"><br>
+            <input type="file" name="image2" accept="image/*" id="flatImage2" class="formLabel" required><br>
+            <input type="file" name="image3" accept="image/*" id="flatImage3" class="formLabel" required><br>
 
               <br>
               <br>
@@ -332,6 +355,8 @@ span#required{
       </div>
     </div>
   </section>
+
+
 
 
 
