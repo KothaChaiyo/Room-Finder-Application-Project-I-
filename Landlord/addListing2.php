@@ -23,37 +23,6 @@ include 'landlordHeader.php';
 
 
 
-if (isset($_COOKIE['latitude']) && isset($_COOKIE['longitude'])) {
-//   // Retrieve the cookie values
-  $latitude = $_COOKIE['latitude'];
-  $longitude = $_COOKIE['longitude'];
-
-
-  $coords = $latitude."+".$longitude;
-
-
-  setcookie("longitude", "", time() - 3600, "/");
-setcookie("latitude", "", time() - 3600, "/");
-
-
-
-
-
-  // setcookie("latitude", "", time() - 3600, "/");
-  // setcookie("longitude", "", time() - 3600, "/");
-
-
-
-
-
-  // You can now use $latitude and $longitude in your PHP code
-  // For example, echo them to display the values
-  // echo "Latitude: " . $latitude . "<br>";
-//   // echo "Longitude: " . $longitude;
-}else{
-  $coords = "";
-}
-
 
 
 
@@ -114,6 +83,43 @@ function input_data($data){
 
 
 if($_SERVER["REQUEST_METHOD"]=="POST"){
+
+
+
+
+if (isset($_COOKIE['latitude']) && isset($_COOKIE['longitude'])) {
+  //   // Retrieve the cookie values
+    $latitude = $_COOKIE['latitude'];
+    $longitude = $_COOKIE['longitude'];
+
+
+  
+    $coords = $latitude."+".$longitude;
+  
+  
+  setcookie("longitude", "", time() - 3600, "/");
+  setcookie("latitude", "", time() - 3600, "/");
+  
+  
+  
+  
+  
+    // setcookie("latitude", "", time() - 3600, "/");
+    // setcookie("longitude", "", time() - 3600, "/");
+  
+  
+  
+  
+  
+    // You can now use $latitude and $longitude in your PHP code
+    // For example, echo them to display the values
+    // echo "Latitude: " . $latitude . "<br>";
+  //   // echo "Longitude: " . $longitude;
+  }else{
+    $coords = "+";
+  }
+
+  
 
 
       $wifi=input_data($_POST['wifi']);
@@ -285,6 +291,32 @@ span#required{
 
 <script>
   
+let latitude = " ";
+let longitude = " ";
+
+
+
+function setcookie(name, value, daysToExpire) {
+    var cookieValue = name + "=" + encodeURIComponent(value);
+  
+    if (daysToExpire) {
+      var expirationDate = new Date();
+      expirationDate.setTime(expirationDate.getTime() + (daysToExpire * 24 * 60 * 60 * 1000));
+      cookieValue += "; expires=" + expirationDate.toUTCString();
+    }
+  
+    document.cookie = cookieValue + "; path=/";
+  }
+
+
+
+
+setcookie("longitude", longitude);
+setcookie("latitude", latitude);
+
+
+
+
 </script>
 
 </head>
@@ -306,7 +338,7 @@ span#required{
             <label for="wifiAvailableYes" class="formLabel">Yes</label>
             <input type="radio" name="wifi" id="wifiAvailableYes" class="inputTextFelidRadio" value="Yes" required>
             <label for="wifiAvailableNo" class="formLabel">No</label>
-            <input type="radio" name="wifi" id="wifiAvailableNO" class="inputTextFelidRadio"  Value = "No" required>
+            <input type="radio" name="wifi" id="wifiAvailableNO" class="inputTextFelidRadio"  value = "No" required>
                   
             <br>
             <br>
@@ -373,11 +405,12 @@ span#required{
 if(isset($_POST["submit"])){
 
 
-  $insQuery = "INSERT INTO property(l_id,title,description,location,size,rent,image1,image2,image3,coords,hasWifi,has_parking,has_running_water) values($landlordId,'$title','$description','$location','$size','$rent','$imgData1','$imgData2','$imgData3','$coords','$wifi','$parking','$runningWater')";
+//  $insQuery = "INSERT INTO property(l_id,title,description,location,size,rent,image1,image2,image3,coords,hasWifi,has_parking,has_running_water) values($landlordId,'$title','$description','$location','$size','$rent','$imgData1','$imgData2','$imgData3','123','$wifi','$parking','$runningWater')";
+
+
+$insQuery = "INSERT INTO property(l_id,title,description,location,size,rent,image1,image2,image3,coords,hasWifi,has_parking,has_running_water) values($landlordId,'$title','$description','$location','$size','$rent','$imgData1','$imgData2','$imgData3','$coords','$wifi','$parking','$runningWater')";
 
 mysqli_query($connection,$insQuery);
-
-
 
 unset($_SESSION['title']);
 unset($_SESSION['description']);
