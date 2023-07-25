@@ -18,15 +18,61 @@
 //     }
 
 
+let latitude = "";
+let longitude = "";
+
+
+
+setCookie("longitude", `${longitude}`);
+setCookie("latitude", `${latitude}`,);
+
+
+function setCookie(name, value, daysToExpire) {
+    var cookieValue = name + "=" + encodeURIComponent(value);
+  
+    if (daysToExpire) {
+      var expirationDate = new Date();
+      expirationDate.setTime(expirationDate.getTime() + (daysToExpire * 24 * 60 * 60 * 1000));
+      cookieValue += "; expires=" + expirationDate.toUTCString();
+    }
+  
+    document.cookie = cookieValue + "; path=/";
+  }
+
+
+
+
+
 
 function sendToServer(longitude,latitude){
-  // Your JavaScript variable
-//   var jsVariable = "Hello from JavaScript";
+
+
+//     let d = new Date();
+
+// d.setTime(d.getTime() + (30 * 1000)); // Add 30 seconds to the current time
+// // var expires = "expires=" + d.toUTCString();
+
+
+// var expires = "expires="+d.toGMTString();
+
+setCookie("longitude" , `${longitude}`);
+setCookie("latitude" , `${latitude}`);
 
 
 
-document.cookie = "latitude=" + latitude + "; expires=Fri, 31 Dec 9999 23:59:59 GMT";
-document.cookie = "longitude=" + longitude + "; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+
+
+
+
+
+
+// document.cookie = "latitude=" + latitude + "; " + expires + "; path=/";
+// document.cookie = "longitude=" + longitude + "; " + expires + "; path=/";
+
+
+
+// document.cookie = "latitude=" + latitude + "; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+// document.cookie = "longitude=" + longitude + "; expires=Fri, 31 Dec 9999 23:59:59 GMT";
 
 
 
@@ -59,7 +105,7 @@ document.cookie = "longitude=" + longitude + "; expires=Fri, 31 Dec 9999 23:59:5
       zoom: 9,
     });
 
-    let latitude , longitude;
+
 
     // Add markers based on user interactions or predefined locations
     // For example, you can allow users to click on the map to add a marker
@@ -74,12 +120,11 @@ document.cookie = "longitude=" + longitude + "; expires=Fri, 31 Dec 9999 23:59:5
         .addTo(map);
       // Send the marker location to your server to make it visible to everyone
       // Implement the necessary logic on your server to store and share the marker information
-
-       longitude = marker._lngLat.lng;
-       latitude = marker._lngLat.lat;
+   
+        longitude = marker._lngLat.lng;
+        latitude = marker._lngLat.lat;
       
-      console.log(longitude,latitude);
-
+     
 
 
     //   writeCoordinates();
@@ -124,8 +169,6 @@ document.cookie = "longitude=" + longitude + "; expires=Fri, 31 Dec 9999 23:59:5
 
   
     // ...
-
-
 
 
 
