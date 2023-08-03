@@ -32,6 +32,7 @@ include('header.php');
     <!-- navbar section  -->
 
     <!-- <script src = "./script/header.js"></script> The code of Navbar section has been moved to Header.js and Imported -->
+    <script src="./script/header.js"></script>
   
     <!-- home section -->
       
