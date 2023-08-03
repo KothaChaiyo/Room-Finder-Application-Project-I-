@@ -335,6 +335,7 @@ font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ox
   animation-duration: 1.5s;
 }
 
+
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
@@ -343,8 +344,39 @@ font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ox
 
 
 
+/* landlord only start  */
+
+.delete input{
+
+  margin-left:38%;
+      
+       
+  height:55px;
+  font-weight:bolder;
+     
+        
+  padding:5px;
+     
+
+  margin-left : 43%;
+  margin-top:2vw;
+  /* height:3rem; */
+  width:10rem;
+  border-radius:10px;
+  border:none;
+  color:red;
+
+ 
+  
+  font-size:1rem;
+  background-color:#053367; 
+  cursor: pointer;
+
+}
 
 
+
+/* landlord only end  */
 
 
           /* new  */
@@ -402,6 +434,15 @@ font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ox
               margin-left:20%;
             }
 
+            .delete input{
+
+margin-left:36%;
+    
+     
+
+
+}
+
             div.container-map{
           width:65vw;
           margin-left:1vw;
@@ -448,6 +489,21 @@ div.container{
     
   }
 
+
+  .delete input{
+
+margin-left:36%;
+height:6vw;
+width:25vw;
+min-width:100px;
+/* font-size:15px; */
+font-size:3vw;
+
+border-radius:5px;
+    
+}
+
+
   div.container-map{
 width:85vw;
 margin-left:1vw;
@@ -463,12 +519,24 @@ margin-left:5vw;
 
 div.contactOwner{
   font-size:3vw;
-  height:3vw;
+  height:5vw;
   margin-left:30%;
 }
 
 
 }
+
+
+
+@media screen and (max-width:300px){
+  div.contactOwner , div.delete input{
+    margin-left:10%;
+    height:20px;
+  }
+}
+
+
+
           
       
     </style>
@@ -576,6 +644,15 @@ div.contactOwner{
         Ring Owner <i class="fa-solid fa-phone-volume"></i> : <?php echo  $contact; ?>
       </div>
 
+      <!-- for landlord only start  -->
+      <div class="delete">
+       <form action="" method="POST">
+        <input type="submit" name="delete" value="Delete Property" onclick="return confirmDelete()">
+      </form> 
+      </div>
+
+      <!-- for landlord only end  -->
+
       <br><br>
     </div>
 
@@ -612,9 +689,11 @@ let latitude = `<?php echo $latitude; ?>`;
   let longitude = `<?php echo $longitude; ?>`;
 
 
-  if(latitude=="" && longitude == ""){
+
+  if(latitude==" " && longitude == " "){
     document.getElementById("map").style.display = "none";
     document.getElementById("NA").style.display = "block";
+    document.getElementsByClassName("contactOwner")[0].style.marginTop="-250px";
   }
 
 
@@ -671,16 +750,58 @@ function showSlides(n) {
 
 
 
-// new 
 
 
 
 
   </script>
+
+
+
+<!-- landlord only start -->
+<script>
+function confirmDelete() {
+            // Show the confirmation dialog box
+            var result = confirm("Do you really want to delete?");
+
+            // If the user clicks 'OK' (Yes), proceed with the form submission
+            return result;
+        }
+ </script>
+
+<!-- landlord only end -->
+
+
+
 </html>
 
 <?php
   
 }
+
+
+
+// for landlord only start 
+
+
+// logic to delete property 
+
+if(isset($_POST["delete"])){
+  $deleteQuery = "DELETE FROM property WHERE p_id = $p_id";
+
+  $deleteResult = mysqli_query($connection,$deleteQuery);
+
+  if($deleteResult){
+   ?>
+
+    <script>window.location.href="landlordHome.php"</script>
+
+<?php
+  }
+
+}
+
+
+// for landlord only end
 
 ?>

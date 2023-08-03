@@ -2,6 +2,10 @@
 <!-- Used to verify email for account creation  -->
 <?php
 include('config.php');
+
+include ('header.php');
+
+
 session_start();
 
 
@@ -53,7 +57,7 @@ Email.send({
     
     <script src="./script/index.js" defer></script>
           <!-- This includes all the Navbar and relevant heading section-->
-          <script src="./script/header.js"></script>
+          <!-- <script src="./script/header.js"></script> -->
 
     
 

@@ -2,6 +2,9 @@
 
 require('./connect.php');
 
+include ('header.php');
+
+
 $passwordErr = "";
 $cpasswordErr = "";
 
@@ -45,7 +48,85 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     <link rel="stylesheet" href="./style/passwordCreation.css">
     <script src="./script/index.js" defer></script>
           <!-- This includes all the Navbar and relevant heading section-->
-          <script src="./script/header.js"></script>
+          <!-- <script src="./script/header.js"></script> -->
+
+
+          <style>
+
+            button.container-button{
+                border:none;
+                position: relative;
+                left: 25%;
+            }
+            input{
+                text-align:center;
+            }
+
+
+            @media screen and (max-width:1500px) {
+                .title-h3{
+                    margin-left:-5%;
+                }
+
+                .container{
+                    width:45vw;
+                   height:63vh;
+                
+                }
+            }
+
+
+            @media screen and (max-width:1300px) {
+                .title-h3{
+                    margin-left:-8%;
+                }
+            }
+
+
+            @media screen and (max-width:1000px) {
+              div.container{
+                width:60vw;
+                left:20vw;
+              }
+              
+            }
+
+
+            @media screen and (max-width:650px) {
+              div.container{
+                width:75vw;
+                left:5vw;
+                height:fit-content;
+              }
+              
+            }
+
+
+            @media screen and (max-width:500px) {
+
+                
+                .title-h2{
+                        font-size:7vw;
+                }
+
+                .title-h3{
+                        font-size:5vw;
+                }
+
+                button.container-button{
+                        height:12vw;
+                        font-size:5vw;
+                }
+                input#container-emailV{
+                    height:12vw;
+                }
+
+              
+            }
+
+
+
+          </style>
 </head>
 <body>
     <div class="container hidden"><br>
