@@ -9,10 +9,12 @@ body {
     overflow: hidden;
     max-width: 80%;
     margin: 50px auto;
+
     background-color: #D1F1FF;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     border-radius: 10px;
+    /* height:70vh; */
 }
 
 .Welcome {
@@ -123,6 +125,8 @@ tr:nth-child(odd) {
 tr:hover {
     background-color: #7cb1e7;
 }
+
+
 
 
 @media screen and (max-width: 800px) {

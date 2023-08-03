@@ -44,7 +44,9 @@ if (!$connection) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+   
+    <title>Kotha Chaiyo-Ultimate Property Finder</title>
+    <link rel="icon" href="../Public/Images/kothaChaiyoLogo.png">
     <link rel="stylesheet" href="../Public/style/tenantHome.css">
     <!-- <script src="../Public/script/tenantHeader.js"></script> -->
 

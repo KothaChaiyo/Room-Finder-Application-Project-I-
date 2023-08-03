@@ -1,3 +1,20 @@
+<?php
+
+session_start();
+
+
+
+if( !isset($_SESSION['aemail'])){
+
+    header("HTTP/1.0 404 Not Found");
+    echo "<h1>404 Not Found</h1>";
+    echo "The requested URL was not found on this server.";
+    exit;
+
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

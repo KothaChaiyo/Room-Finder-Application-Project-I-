@@ -11,8 +11,8 @@ include('header.php');
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Room Finder-Ultimate Property Finder</title>
-    <link rel="icon" href="Images/kothaChaiyoLogo.png">
+    <title>Kotha Chaiyo-Ultimate Property Finder</title>
+    <link rel="icon" href="./Images/kothaChaiyoLogo.png">
 
     <!-- for general styling of components  -->
     <link rel="stylesheet" href="./style/style.css">
