@@ -27,7 +27,12 @@ include 'tenantHeader.php';
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+
+
     <title>Account Information</title>
+    <link rel="icon" href="../Public/Images/kothaChaiyoLogo.png">
+
     <!-- <link rel="stylesheet" href="../Public/style/accountInfo.css" /> -->
     <!-- <script src="../Public/script/landlordHeader.js" "defer"></script> -->
 

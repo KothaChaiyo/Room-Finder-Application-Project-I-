@@ -161,7 +161,7 @@ if (isset($_COOKIE['latitude']) && isset($_COOKIE['longitude'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Room Finder-Ultimate Property Finder</title>
+    <title>Add Listing</title>
     <link rel="icon" href="../Public/Images/kothaChaiyoLogo.png">
 
     <!-- for general styling of components  -->

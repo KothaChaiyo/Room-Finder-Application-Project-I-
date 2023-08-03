@@ -67,7 +67,10 @@ if(isset($_POST['submit'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>emailVerification</title>
+    <title>Email Verification</title>
+  
+    <link rel="icon" href="./Images/kothaChaiyoLogo.png">
+    
     <link rel="stylesheet" href="./style/animation.css">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/emailVerification.css">

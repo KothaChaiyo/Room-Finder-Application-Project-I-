@@ -11,7 +11,11 @@ include('header.php');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
+    <title>LogIn</title>
+ 
+    <link rel="icon" href="./Images/kothaChaiyoLogo.png">
+
+    
     <link rel="stylesheet" href="./style/animation.css">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/login.css">
@@ -62,12 +66,20 @@ if (isset($_POST['submit'])) {
 
     $query1 = "select * from landlord where email ='$Email' and password ='$pass_hash'";
     $query2 = "select * from tenant where email ='$Email' and password ='$pass_hash'";
+    $query3 = "select * from admin where email = '$Email' and password = '$pass_hash'";
+
+
     $queryL = mysqli_query($connection,$query1);
     $queryT = mysqli_query($connection,$query2);
+    $queryA = mysqli_query($connection,$query3);
+
+
+
     $countLandlord = mysqli_num_rows($queryL);
     $countTenant = mysqli_num_rows($queryT);
+    $countAdmin = mysqli_num_rows($queryA);
 
-    if($countLandlord==1||$countTenant==1 ){
+    if($countLandlord==1||$countTenant==1 || $countAdmin==1 ){
     if ($countLandlord==1) {
         $array=mysqli_fetch_assoc($queryL);
         $_SESSION['lname']= $array['name'];
@@ -103,7 +115,24 @@ if (isset($_POST['submit'])) {
                 echo "</script>";
                 
          }
+
+         if($countAdmin==1){
+
+            $array=mysqli_fetch_assoc($queryA);
+            $_SESSION['aemail']= $array['email'];
+            $_SESSION['acontact']= $array['contact'];
+            header("Location:../Admin/landing.php");
+            exit();
+        }else {
+            echo "<script>";
+            echo "document.getElementById('parav').innerHTML='<br>Incorrect credentials !!!'";
+            echo "</script>";
+        }
     
     }
+
+ 
+        
+ 
 
 ?>

@@ -116,8 +116,10 @@ function input_data($data)
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SignUp</title>
 
-    <!--LINK-->
-    <link rel="icon" href="Images/NOSK_Logo_with_Tagline.png">
+
+    <link rel="icon" href="./Images/kothaChaiyoLogo.png">
+
+
 
     <!-- for general styling of components  -->
     <link rel="stylesheet" href="./style/style.css">
