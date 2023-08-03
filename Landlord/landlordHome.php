@@ -193,6 +193,7 @@ if (!$connection) {
                 font-size:2rem;
                 font-weight:bolder;
                 overflow:hidden;
+          
                 
                
             }
@@ -203,6 +204,7 @@ if (!$connection) {
                 /* border:2px solid red; */
                 /* height:4vw; */
                 /* margin-top:-2vw; */
+
             
 
                 width:75%;
@@ -216,6 +218,7 @@ if (!$connection) {
                position: absolute;
                bottom:0;
            
+  
             }
 
             span#size{
@@ -226,6 +229,7 @@ if (!$connection) {
                 left:2%;
                 bottom:0;
            
+
             }
 
             button.viewDetails{
@@ -368,6 +372,17 @@ if (!$connection) {
 
             p#listingsHeading{
                 font-size:2rem;
+            }
+
+            span#size{
+                width:15vw;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            span#rent{
+                word-wrap: break-word; /* Wrap the text to the next line if it exceeds the container's width */
+  overflow: hidden;
             }
 
 

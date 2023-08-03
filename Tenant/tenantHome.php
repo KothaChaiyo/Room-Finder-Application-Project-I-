@@ -256,7 +256,11 @@ div.recordContainer{
                 }
 
 
-
+            @media screen and (max-width:1600px){
+                p#title{
+                    font-size:1.7rem;
+                }
+            }
 
             @media screen and (max-width:1400px) {
                div.recordContainer{
@@ -317,6 +321,14 @@ div.recordContainer{
                 /* margin-left:30vw; */
             }
 
+
+            span#rent,span#size,span#location{
+    
+            font-size:0.5vw;
+        }
+
+
+
             
             }
         
@@ -350,6 +362,8 @@ div.recordContainer{
         div.searchContainer input{
             margin-left:10vw;
         }
+
+ 
             }
 
 
@@ -415,6 +429,17 @@ div.recordContainer{
 
         
             
+            }
+
+            @media screen and (max-width:900px){
+
+            span#rent,span#size,span#location{
+    
+            /* background-color:red; */
+            width:12vw;
+            overflow: hidden; /* Hide any content that overflows the container */
+  text-overflow: ellipsis
+                }
             }
 
 

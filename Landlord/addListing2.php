@@ -279,6 +279,98 @@ span#required{
   font-size:2rem;
 }
 
+
+@media screen and (max-width:1400px){
+  div.addListingFormContainer{
+    /* background-color:red; */
+    width:70%;
+  }
+
+  h2#addListingTitle{
+    font-size:4vw;
+  }
+
+  label , input[type="file"]{
+    font-size:2vw;
+  }
+
+  div#map{
+    width:90%;
+  }
+
+
+
+}
+
+@media screen and (max-width:1200px){
+ input[type="submit"]{
+  width:15vw;
+  height:40px;
+ }
+
+
+ label , input[type="file"]{
+    font-size:3vw;
+  }
+  
+}
+
+@media screen and (max-width:900px){
+  div.addListingFormContainer{
+    /* background-color:red; */
+    width:80%;
+  }
+}
+
+@media screen and (max-width:700px){
+  div.addListingFormContainer{
+    /* background-color:red; */
+    width:90%;
+    margin-top:40px;
+    margin-left:0px;
+  }
+
+  input[type="submit"]{
+  width:20vw;
+  height:40px;
+  margin-left:30%;
+  font-size:3vw;
+ }
+
+ h2#addListingTitle{
+    font-size:7vw;
+  }
+
+
+  label , input[type="file"]{
+    font-size:5vw;
+  }
+
+  div#map{
+    height:300px;
+  }
+
+  input[type="radio"]{
+    height:20px;
+    width:20px;
+  }
+}
+
+@media screen and (max-width:400px){
+
+
+  input[type="submit"]{
+  width:20vw;
+  height:40px;
+  margin-left:30%;
+  font-size:5vw;
+ }
+
+ label{
+    font-size:6vw;
+  }
+}
+
     </style>
 
 

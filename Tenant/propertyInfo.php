@@ -149,6 +149,11 @@ font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ox
           font-size:2rem;
           display:block;
           text-align:center;
+          word-wrap:break-word;
+          height:fit-content;
+          /* background-color:red; */
+          width:80%;
+          margin-left:10%;
           
 
         }
@@ -157,17 +162,24 @@ font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ox
           margin-left:10%;
           font-size:1.7rem;
           width:80%;
+          word-wrap:break-word;
+          height:fit-content;
+          /* background-color:red; */
         }
         div.container-address{
           margin-left:10%;
           font-size:1.7rem;
           width:80%;
+          word-wrap:break-word;
+          height:fit-content;
 
         }
         div.amenities{
           margin-left:10%;
           font-size:1.7rem;
           width:80%;
+          word-wrap:break-word;
+          height:fit-content;
 
         }
 
@@ -175,6 +187,8 @@ font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ox
           margin-left:10%;
           font-size:1.7rem;
           width:80%;
+          word-wrap:break-word;
+          height:fit-content;
 
         }
 
@@ -182,6 +196,8 @@ font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ox
           margin-left:10%;
           font-size:1.7rem;
           width:80%;
+          word-wrap:break-word;
+          height:fit-content;
 
         }
 
@@ -189,6 +205,8 @@ font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ox
           margin-left:10%;
           font-size:1.7rem;
           width:80%;
+          word-wrap:break-word;
+          height:fit-content;
 
         }
 
@@ -196,6 +214,8 @@ font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ox
           margin-left:10%;
           font-size:1.7rem;
           width:80%;
+          word-wrap:break-word;
+          height:fit-content;
 
         }
 
@@ -203,6 +223,8 @@ font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ox
           margin-left:10%;
           font-size:1.7rem;
           width:80%;
+          word-wrap:break-word;
+          height:fit-content;
 
         }
 
@@ -475,7 +497,7 @@ div.container{
 
   span.container-title{
     font-size:1.5rem;
-    margin-left:0;
+    /* margin-left:0; */
     text-align:center;
 
   }
