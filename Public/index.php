@@ -1,10 +1,18 @@
+
+<?php
+
+include('header.php');
+
+?>
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Room Finder-Ultimate Property Finder</title>
-    <link rel="icon" href="Images/NOSK_Logo_with_Tagline.png">
+    <link rel="icon" href="Images/kothaChaiyoLogo.png">
 
     <!-- for general styling of components  -->
     <link rel="stylesheet" href="./style/style.css">
@@ -23,7 +31,7 @@
 
     <!-- navbar section  -->
 
-    <script src = "./script/header.js"></script> <!-- The code of Navbar section has been moved to Header.js and Imported -->
+    <!-- <script src = "./script/header.js"></script> The code of Navbar section has been moved to Header.js and Imported -->
   
     <!-- home section -->
       
@@ -47,9 +55,9 @@
         <div id="title">Why Us?</div>
 
         <div id="imgContainer">
-            <img src="./Images/NOSK_Logo_with_Tagline.png" alt="">
-            <img src="./Images/NOSK_Logo_with_Tagline.png" alt="">
-            <img src="./Images/NOSK_Logo_with_Tagline.png" alt="">
+            <img src="./Images/kothaChaiyoLogo.png" alt="">
+            <img src="./Images/kothaChaiyoLogo.png" alt="">
+            <img src="./Images/kothaChaiyoLogo.png" alt="">
 
         </div>
     </section>

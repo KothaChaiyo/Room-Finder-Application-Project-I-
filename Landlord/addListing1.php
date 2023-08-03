@@ -2,7 +2,6 @@
 <?php
 session_start();
 
-include 'landlordHeader.php';
 
 
 
@@ -15,6 +14,46 @@ if(!isset($_SESSION['lname']) || !isset($_SESSION['lemail']) || !isset($_SESSION
     exit;
 
 }
+
+include 'landlordHeader.php';
+
+
+
+
+define('DB_HOST', 'localhost');
+define('DB_USERNAME', 'root');
+define('DB_PASSWORD', '');
+define('DB_NAME', 'KothaChaiyo');
+
+
+// Establish database connection
+$connection = mysqli_connect(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+
+// Check connection
+if (!$connection) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+
+
+$email = $_SESSION['lemail'];
+$query1 = "SELECT l_id FROM landlord WHERE email='$email' ";
+
+$q1 = mysqli_query($connection,$query1);
+$array=mysqli_fetch_assoc($q1);
+$_SESSION['l_id']= $array['l_id'];
+
+$landlordId = $_SESSION['l_id'];
+
+
+$query2 = "SELECT * FROM property WHERE l_id=$landlordId";
+
+$q2 = mysqli_query($connection,$query2);
+
+$countProperty = mysqli_num_rows($q2);
+
+
+
 
 
 ?>
@@ -65,7 +104,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Room Finder-Ultimate Property Finder</title>
-    <link rel="icon" href="../Public/Images/NOSK_Logo_with_Tagline.png">
+    <link rel="icon" href="../Public/Images/kothaChaiyoLogo.png">
 
     <!-- for general styling of components  -->
     <!-- <link rel="stylesheet" href="../Public/style/style.css"> -->
@@ -158,19 +197,242 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
       }
 
       #addListing{
-        color:rgb(24, 200, 133);;
+        color:rgb(24, 200, 133);
       }
 
       span#required{
         color:red;
         font-size:2rem;
       }
+
+
+      @media screen and (max-width:1300px) {
+        div.addListingFormContainer{
+     
+        margin-left:5vw;
+        padding:10px;
+        height:fit-content;
+        width:70%;
+    
+    
+      }
+      input{
+        width:70%;
+      }
+
+      label{
+        font-size:1.5rem;
+      }
+
+      input[type="submit"]{
+        background-color:green;
+        width:18vw;
+        height:5vw;
+
+
+
+    
+      }
+
+      }
+
+
+      @media screen and (max-width:1300px) {
+        div.addListingFormContainer{
+     
+        margin-left:5vw;
+        padding:10px;
+        height:fit-content;
+        width:80%;
+    
+    
+      }
+    }
+
+
+
+    @media screen and (max-width:900px) {
+        div.addListingFormContainer{
+     
+        margin-left:3vw;
+        padding:10px;
+        height:fit-content;
+        width:90%;
+    
+    
+      }
+
+      label{
+        font-size:1.3rem;
+      }
+
+
+      input[type="submit"]{
+        background-color:green;
+        width:22vw;
+        height:6vw;
+
+
+
+    
+      }
+
+
+    }
       
+
+    @media screen and (max-width:700px) {
+        div.addListingFormContainer{
+     
+        margin-left:1vw;
+        padding:10px;
+        margin-top:5vh;
+        height:fit-content;
+        width:90%;
+        
+    
+    
+      }
+
+      #addListingTitle{
+        color:#136a49;
+        font-size:5vw;
+        margin-left:28vw;
+      }
+
+      label{
+        font-size:1.5rem;
+      }
+      input{
+        width:90%;
+        margin-left:0;
+        margin-top:-2px;
+      }
+
+      textarea{
+        width:90%;
+      }
+
+
+
+      input[type="submit"]{
+        background-color:green;
+        width:25vw;
+        height:8vw;
+        margin-left:35%;
+
+
+
+    
+      }
+
+
+      
+    }
+
+
+
+    @media screen and (max-width:500px) {
+  
+
+      label{
+        font-size:1rem;
+      }
+      input{
+    
+        font-size:1rem;
+        border-radius:3px;
+      }
+
+      textarea{
+   
+        font-size:1rem;
+      
+      }
+      
+    }
+
+
+    @media screen and (max-width:300px) {
+
+
+    div.addListingFormContainer{
+     
+     margin-left:-1vw;
+     padding:5px;
+     height:fit-content;
+     width:95%;
+ 
+ 
+   }
+
+
+#addListingTitle{
+  font-size:1rem;
+}
+
+    
+
+  label{
+    font-size:0.8rem;
+  }
+  input{
+
+    font-size:0.8rem;
+    height:4vh;
+    
+  }
+
+  textarea{
+
+    font-size:0.8rem;
+  
+  }
+  
+}
+
+
+
+@media screen and (max-width:250px) {
+
+
+    
+
+  label{
+    font-size:0.5rem;
+  }
+  input{
+
+    font-size:0.5rem;
+    height:4vh;
+    
+  }
+
+  textarea{
+
+    font-size:0.5rem;
+  
+  }
+  
+}
     </style>
 </head>
 <body>
 
 <section class="main">
+<?php
+
+if($countProperty>=2){
+
+header("HTTP/1.0 404 Not Found");
+echo "<h1 style='color:red;font-size:60px;font-weight:bolder;'>Sorry!</h1>";
+echo "<p style='font-weight:bolder;font-size:20px;'>You cannot add more than 2 concurrent listings. </p>";
+exit;
+
+}
+
+?>
+
     <div class="addListingContainer">
       <div class="addListingContainerForm">
         <div class="addListingFormContainer" id="addListing1">

@@ -200,7 +200,7 @@ if (!$connection) {
             p#description{
                 overflow:hidden;
                 white-space: nowrap;
-                border:2px solid red;
+                /* border:2px solid red; */
                 /* height:4vw; */
                 /* margin-top:-2vw; */
             
@@ -644,7 +644,7 @@ else{
 
             <div id="details">
                 <p id="title"> <?php echo $row['title'] ?> </p>
-                <p id="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia nemo laborum voluptatem soluta assumenda facere eius quidem ducimus deserunt, quis quam vero quia ipsam autem possimus placeat mollitia vitae quas harum minima corporis dolorem accusantium odio explicabo. Repudiandae fugiat ipsam cum magnam modi suscipit autem similique esse eum, doloremque possimus animi ea fugit officiis dolor, culpa deleniti facere tempore labore repellat commodi rerum? Sed repellendus dolores aliquid tenetur magnam beatae facere illo, rerum deleniti, ratione reprehenderit, iure modi culpa sapiente deserunt dolorum obcaecati eligendi! Veritatis, officiis ipsam, atque sapiente enim a animi doloribus unde totam placeat quia ad fugit nam asperiores exercitationem excepturi aspernatur. Ea tempora nesciunt minus saepe iste, animi vero quod. Modi iste sunt eius dolorem dicta voluptatem minus tenetur. Totam id soluta, dicta hic nulla eius excepturi deserunt repellat quibusdam repudiandae asperiores vel neque nobis dolore, magni harum accusantium maxime dolor voluptatem illum corrupti aut odio perspiciatis earum? Suscipit, quibusdam. Tempore consectetur, sit molestias culpa dicta praesentium rerum facere doloremque quidem soluta enim aspernatur voluptatum obcaecati saepe facilis blanditiis fugiat id inventore illum quo. Fugit sint facilis ut totam vel maxime molestiae maiores corrupti reiciendis, harum nostrum voluptates culpa libero minus, fuga quasi. Autem delectus nulla expedita.</p>
+                <p id="description"><?php echo $row['description'] ?></p>
                 <span id="size">&#128719;<?php  echo $row['size']   ?></span>
                 <span id="rent">&#8377;<?php  echo $row['rent']   ?></span>
 

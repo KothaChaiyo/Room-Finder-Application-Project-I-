@@ -2,6 +2,8 @@
     
 include 'connect.php';
 
+include ('header.php');
+
 
 $fname =$lname= $email = $password=$cpassword=$contact="";
 
@@ -137,7 +139,7 @@ function input_data($data)
 
 
     <!-- This includes all the Navbar and relevant heading section-->
-    <script src="./script/header.js"></script>
+    <!-- <script src="./script/header.js"></script> -->
 
     <div class="signUpContainer">
             <form action="" method="POST" id="signUpForm" onsubmit="return validate();">

@@ -162,7 +162,7 @@ if (isset($_COOKIE['latitude']) && isset($_COOKIE['longitude'])) {
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Room Finder-Ultimate Property Finder</title>
-    <link rel="icon" href="../Public/Images/NOSK_Logo_with_Tagline.png">
+    <link rel="icon" href="../Public/Images/kothaChaiyoLogo.png">
 
     <!-- for general styling of components  -->
     <!-- <link rel="stylesheet" href="../Public/style/style.css"> -->
