@@ -439,15 +439,15 @@ exit;
           <h2 id="addListingTitle">Add Listing</h2>
           <form action="" method="POST">
             <label for="propertyTitle" class="formLabel">Title</label> <span id="required">*</span>
-            <input type="text" name="title" id="propertyTitle" class="inputTextFelid" required> <br>
+            <input type="text" name="title" id="propertyTitle" class="inputTextFelid" required maxlength="50"> <br>
             <label for="location" class="formLabel" >Location</label>  <span id="required">*</span>
-            <input type="text"  name="location" id="propertyTitle" class="inputTextFelid" required><br>
+            <input type="text"  name="location" id="propertyTitle" class="inputTextFelid" required maxlength="20"><br>
             <label for="size" class="formLabel" >Size</label> <span id="required">*</span>
-            <input type="text" name="size" id="propertySize" class="inputTextFelid" placeholder="Eg: single room, 1BHk" required><br>
+            <input type="text" name="size" id="propertySize" class="inputTextFelid" placeholder="Eg: single room, 1BHk" required maxlength="20"><br>
             <label for="rent" class="formLabel" >Rent</label> <span id="required">*</span>
             <input type="number" name="rent" id="propertyRent" class="inputTextFelid" required><br>
             <label for="description" class="formLabel" >Description</label>  <span id="required">*</span>
-            <textarea name="description" id="propertyDescription" class="inputTextFelid" cols = "30" rows="5" required></textarea><br>
+            <textarea name="description" id="propertyDescription" class="inputTextFelid" cols = "30" rows="5" required maxlength="200"></textarea><br>
             <br>
             <input type="submit" name="submit" value="Next" class="inputButton" >
           </form>
@@ -457,6 +457,19 @@ exit;
   </section>
 </body>
 </html>
+
+<script>
+
+const maxAllowedDigits = 8; // Set the maximum number of digits allowed
+const numberInput = document.getElementById('propertyRent');
+
+numberInput.addEventListener('input', () => {
+  const inputValue = numberInput.value.replace(/\D/g, ''); // Remove non-digit characters
+  if (inputValue.length > maxAllowedDigits) {
+    numberInput.value = inputValue.slice(0, maxAllowedDigits); // Truncate the input to the max length
+  }
+});
+</script>
 
 
 

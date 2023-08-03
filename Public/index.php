@@ -39,7 +39,7 @@ include('header.php');
     <section class="hidden" id="home">
 
             <div id="welcomeMessageContainer">
-                <p> <span id="welcomeTo"> Welcome to</span> <br><span id="RoomFinder">RoomFinder</span><br><span id="titleMessage">We make the process of finding flats/rooms Easier. <br> </span> <span id="getStartedNow">Get Started Now</span></p>
+                <p> <span id="welcomeTo"> Welcome to</span> <br><span id="RoomFinder">KothaChaiyo</span><br><span id="titleMessage">We make the process of finding flats/rooms Easier. <br> </span> <span id="getStartedNow">Get Started Now</span></p>
             </div>
 
             <div id="buttonContainer">
@@ -56,9 +56,9 @@ include('header.php');
         <div id="title">Why Us?</div>
 
         <div id="imgContainer">
-            <img src="./Images/kothaChaiyoLogo.png" alt="">
-            <img src="./Images/kothaChaiyoLogo.png" alt="">
-            <img src="./Images/kothaChaiyoLogo.png" alt="">
+            <img src="./Images/NO MIDDLEMAN (1).png" alt="">
+            <img src="./Images/DIRECTCONTACT(1).png" alt="">
+            <img src="./Images/HASSLEFREE.png" alt="">
 
         </div>
     </section>
