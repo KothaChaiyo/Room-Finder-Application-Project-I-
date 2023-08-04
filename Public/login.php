@@ -38,7 +38,7 @@ include('header.php');
             <h3>Ultimate Property Finder</h3>
             <form action=" <?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
 
-                <hr><br>
+                <hr style="position:relative;right:3vw;"><br>
                 <label for="form-name">
                     <p>Email:</p>
                 </label>

@@ -121,7 +121,7 @@ if( !isset($_SESSION['aemail'])){
     </div>
 
     <div class="logOut">
-         <a href="../Public/logout.php"><i class="fa fa-fw fa-sign-out"></i> Log Out</a>
+         <a href="./logout.php"><i class="fa fa-fw fa-sign-out"></i> Log Out</a>
         </div>
 
 
