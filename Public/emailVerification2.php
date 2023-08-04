@@ -4,6 +4,12 @@ session_start();
 
 include ('header.php');
 
+?>
+
+<script>
+    console.log(<?php echo $_SESSION['otp']; ?>);
+</script>
+<?php
 // echo $_SESSION['otp'];
 
 $otpErr="";
