@@ -29,6 +29,8 @@ const name = "<?php echo $_SESSION['fname'];  ?>";
 
 const otp = Math.floor(Math.random()*99999);  //generate random otp
 
+console.log(otp);
+
 
 Email.send({
     Host : "smtp.elasticemail.com",
@@ -100,8 +102,9 @@ submitButton.addEventListener("click",function(event){
     const enteredOTP = document.getElementById("otp").value;
     const otpError = document.getElementById("otperr");
 
+    
+
     console.log(enteredOTP,otpError);
-    console.log(otp);
     
     if(otp==enteredOTP){
       
