@@ -813,10 +813,10 @@ if (isset($_GET['location'])) {
     $location = $_GET['location'];
 
     // Perform the database query
-    $query = "SELECT * FROM property WHERE location LIKE '%$location%' LIMIT $listingsPerPage OFFSET $startingIndex";
+    $query = "SELECT * FROM property  WHERE location LIKE '%$location%'  ORDER BY p_id DESC LIMIT $listingsPerPage OFFSET $startingIndex";
     $countquery = "SELECT * FROM property WHERE location LIKE '%$location%'";
 }else{
-    $query = "SELECT * FROM property LIMIT $listingsPerPage OFFSET $startingIndex";
+    $query = "SELECT * FROM property  ORDER BY p_id DESC LIMIT $listingsPerPage OFFSET $startingIndex";
     $countquery = "SELECT * FROM property";
 
 }
