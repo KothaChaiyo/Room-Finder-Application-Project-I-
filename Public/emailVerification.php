@@ -126,7 +126,7 @@ if(isset($_POST["submit"])){
            Email.send({
                Host : "smtp.elasticemail.com",
                Username : "khatiwadasandesh01@gmail.com",
-               Password : "455BDBFAC2E8D27E7AA95EE7294E885CB01C",
+               Password : "", //smtpjs password goes here
                To : email,
                From : "khatiwadasandesh01@gmail.com",
                Subject : "Welcome to Kotha Chaiyo",
