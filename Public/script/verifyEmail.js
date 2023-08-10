@@ -4,7 +4,7 @@
 Email.send({
     Host : "smtp.elasticemail.com",
     Username : "username",
-    Password : "password",
+    Password : "",  //password goes here
     To : 'them@website.com',
     From : "you@isp.com",
     Subject : "This is the subject",
