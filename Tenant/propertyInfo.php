@@ -719,7 +719,7 @@ let latitude = `<?php echo $latitude; ?>`;
   }
 
 
-mapboxgl.accessToken = 'pk.eyJ1IjoidGhlLW1heS1ndXkiLCJhIjoiY2xoeXkyemxtMGJqbTNkcDV4cDRtYW5tNiJ9.ngKtQaQqRWtYdwNqpO3Tnw';
+mapboxgl.accessToken = '';  //mapboxgl library access token goes here
       const map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v11',
