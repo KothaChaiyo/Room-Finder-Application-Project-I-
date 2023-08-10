@@ -29,7 +29,6 @@ TO CONTRIBUTE:
 
     6. Wait to get reviewed and merged
 
-    Note : Don't push directly to the main branch
 
 
 
