@@ -5,7 +5,7 @@ Web based smart Room Finder Application developed as a college Project I.
 TO CONTRIBUTE:
 
     1. Clone the repo
-            -> git clone https://github.com/sandesh-theMayGuy/RojgarNepal.git
+            -> git clone https://github.com/KothaChaiyo/KothaChaiyo.git
 
     2. Make changes (your contribution)
 
